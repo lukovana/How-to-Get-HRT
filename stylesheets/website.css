@@ -188,3 +188,24 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
 #breadcrumb li a:hover {
     color: #4d9fd0;
 }
+
+/* /* /* /* /* /* /* /* /* /* /* /*
+/*         MEDIA QUERIES         /*
+/* /* /* /* /* /* /* /* /* /* /* */
+@media only screen and (max-width: 1280px) {
+    #search input {width: 50%;}
+}
+@media only screen and (max-width: 860px) {
+    #search input {width: 20%;}
+    nav ul {
+        background-color: #82c6ff;
+        margin: 0;
+    }
+    nav li {
+        margin: 0;
+    }
+    #dropdown:hover .dropitems {
+        visibility: hidden;
+        opacity: 0.0;
+    }
+}
