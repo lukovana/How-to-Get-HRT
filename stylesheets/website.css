@@ -70,10 +70,14 @@ header img {
     float: left;
 }
 #headernav span a {
-    text-align: left;
     font-family: "Montserrat Bold";
     color: #656565;
     text-decoration: none;
+    font-size: 2em;
+}
+#headernav span {
+    display: table-cell;
+    vertical-align: middle;
 }
 nav li a {
     text-decoration: none;
