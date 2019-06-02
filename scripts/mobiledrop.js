@@ -1,6 +1,7 @@
+const count = 0;
+
 function dropdown() {
     const navigation = document.getElementById("mobiledropdown");
-    const count = 0;
     count += 1;
 
     if (count % 2 == 0) {
