@@ -266,6 +266,7 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
         margin-right: auto;
     }
     nav ul {
+        margin-top: 0.4em;
         background-color: #82c6ff;
         text-align: center;
     }
@@ -355,7 +356,7 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
         width: 25px;
         height: 25px;
         
-        margin: 0 0 0 -5em;
+        margin: 0 0 0 -6em;
     }
     #searchbar {
         grid-row: 1;
@@ -363,9 +364,9 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
         margin-left: -6.5em;
     }
     nav ul {
-        position: absolute
         width: 100%;
-        margin: 0 0 0 -2em;
+        margin-top: 0.4em;
+        margin-left: -2em;
         text-align: left;
     }
     nav li:not(.dropbutton) {
