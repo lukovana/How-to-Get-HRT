@@ -7,6 +7,7 @@
 
 var dropdown = (function () {
     var count = 1;
+    const navigation = document.getElementById("mobiledropdown");
 
     if (count % 2 == 0) {
         navigation.style.display = "none";
