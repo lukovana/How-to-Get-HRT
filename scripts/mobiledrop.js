@@ -1,16 +1,8 @@
-var count = 0;
-
 function dropdown() {
-    var button = document.getElementById('mobiledrop');
-    var navigation = document.getElementById('mobiledropdown');
-    var display = document.getElementById('front');
-    
-    count += 1;
-    console.log = "This is count ", count;
-
-    if (count % 2 == 0) {
-        navigation.style.display = "none";
-    } else {
-        navigation.style.display = "block";
-    }
+    const navigation = document.getElementById("mobiledropdown");
+    navigation.style.display = "block";
+}
+function dropout() {
+    const navigation = document.getElementById("mobiledropdown");
+    navigation.style.display = "block";
 }
