@@ -8,7 +8,7 @@
     dark gray   = #454545;
 
 */
-/*****FONTS******************************/
+/*  FONTS           */
 @font-face {
     font-family: Montserrat;
     src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf")
@@ -190,7 +190,17 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
 /*         MEDIA QUERIES         /*
 /* /* /* /* /* /* /* /* /* /* /* */
 @media only screen and (max-width: 1280px) {
-    #search input {width: 50%;}
+    #search input {visibility: hidden;}
+    #headernav {
+        display: grid;
+        grid-template-columns: 30% 60% 10%;
+        grid-template-areas:
+            "header nav search";
+    }
+    header {grid-area: header;}
+    nav {grid-area: nav;}
+    #search {grid-area: search;}
+    #mobiledrop {grid-area: hamburger;}
     #headernav {
         flex-wrap: nowrap;
     }
@@ -199,6 +209,7 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
     #headernav {background-color: limegreen;}
     #headernav {
         display: grid;
+        grid-template-columns: 60% 40%;
         grid-template-areas:
             "header search"
             "nav    nav";
@@ -208,8 +219,7 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
     #search {grid-area: search;}
     nav ul {
         background-color: #82c6ff;
-        margin: 0;
-        width: 100%;
+        margin: 0 -0.15em;
     }
     nav li {
         margin: 0;
@@ -222,7 +232,23 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
         visibility: hidden;
         opacity: 0.0;
     }
+    #search input { 
+        width: 40%;
+    }
 }
+
 @media only screen and (max-width: 640px) {
     #headernav {background-color: magenta;}
+}
+@media only screen and (max-width: 480px) {
+    #headernav {background-color: orange;}
+    #headernav {
+        display: grid;
+        grid-template-columns: 80% 10% 10%;
+        grid-template-areas:
+            "header search  hamburger"
+            "nav    nav     nav";
+    }
+    #mobiledrop {display: inline-flex;}
+    .mobiledropdown {display: none;}
 }
