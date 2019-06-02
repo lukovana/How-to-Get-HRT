@@ -14,8 +14,6 @@ var add = (function () {
         } else {
             navigation.style.display = "block";
         }
-
-        document.getElementById("front").innerHTML = add();
     }
 
 /*function dropout() {
