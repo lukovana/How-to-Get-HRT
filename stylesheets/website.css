@@ -191,6 +191,9 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
 /* /* /* /* /* /* /* /* /* /* /* */
 @media only screen and (max-width: 1280px) {
     #search input {width: 50%;}
+    #headernav {
+        flex-wrap: nowrap;
+    }
 }
 @media only screen and (max-width: 1024px) {
     #headernav {background-color: limegreen;}
@@ -210,7 +213,7 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
     }
     nav li {
         margin: 0;
-        padding: 2em;
+        padding: 1em 0;
     }
     nav li:hover {
         background-color: #656565;
