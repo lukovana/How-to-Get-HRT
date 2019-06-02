@@ -5,13 +5,11 @@ var count = 0;
 
 function dropdown() {
     count += 1;
-    display.innerHTML = "This is count ", count;
+    console.log = "This is count ", count;
 
     if (count % 2 == 0) {
         navigation.style.display = "none;";
-        display.style.backgroundColor = "#ff0000;"
     } else {
         navigation.style.display = "block;";
-        display.style.backgroundColor = "#00ff00;"
     }
 }
