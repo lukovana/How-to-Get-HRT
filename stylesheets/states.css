@@ -1,0 +1,105 @@
+/****STATE HEADER****/
+.state {
+    text-align: center;
+    background-color: rgba(255, 164, 217, 0.9);
+    padding: 2em;
+    margin: 0em -2em;
+    color: #fff;
+}
+.state h2 {
+    font-family: "Montserrat Bold";
+    font-size: 3.5em;
+}
+.state p {
+    font-size: 1.5em;
+}
+
+/****THE STEPS******/
+.steps {
+    padding: 5em 11em 5em 5em;
+    width: 60em;
+    height: 60em;
+    border-radius: 50%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+
+    background-image: url("../assets/images/stepring.svg");
+    background-position-x: 10em;
+    background-position-y: 6em;
+    background-repeat: no-repeat;
+    background-size: 900px;
+}
+.steps a {
+    text-decoration: none;
+    color: #fff;
+}
+.step {
+    background-color: #82c6ff;
+    width: 15em;
+    height: 15em;
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-family: "Montserrat Bold";
+
+    transition: background-color 1.5s;
+}
+.step:hover {
+    background-color: #4d9fd0;
+}
+.psych {
+    grid-column: 3/4;
+    grid-row: 1;
+    margin-right: 2em;
+}
+.physicians {
+    grid-column: 4/5;
+    grid-row: 1;
+    margin-left: 2em;
+}
+.endos {
+    grid-column: 5/6;
+    grid-row: 2;
+}
+.insurance {
+    grid-column: 3/4;
+    grid-row: 4;
+    margin-right: 2em;
+}
+.hrt {
+    grid-column: 4/5;
+    grid-row: 4;
+    margin-left: 2em;
+}
+.srs {
+    grid-column: 2/3;
+    grid-row: 3;
+}
+
+/******************************************/
+/* this is for the states navigation page */
+main ul {
+    margin: 1em;
+}
+.statebutton {
+    display: inline-block;
+    background-color: #656565;
+    border-radius: 50px;
+    text-align: center;
+
+    padding: 1em;
+    margin: 2em 1em 0 0.5em;
+    width: 10em;
+
+    transition: background-color 0.5s;
+}
+.statebutton:hover {
+    background-color: #82c6ff;
+}
+.statebutton a {
+    text-decoration: none;
+    color: #fff;
+}

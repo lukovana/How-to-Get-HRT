@@ -1,0 +1,43 @@
+main {
+    margin: 0 -1em 0 -1em;
+    display: grid;
+    grid-gap: 0em;
+    grid-template-areas:
+        "front front front"
+        "card1 card2 card3"
+        "contact contact contact";
+
+    background: linear-gradient(to bottom, #ffffff 11%,#dddddd 37%,#aaaaaa 100%);
+    margin: 0 -3em -1em -3em;
+}
+#front {grid-area: front;}
+.card:first-child {grid-area: card1;}
+.card:nth-child(1) {grid-area: card2;}
+.card:last-child {grid-area: card3;}
+#contact {grid-area: contact;}
+
+#front {
+    background-color: rgba(130, 198, 255, 0.9);
+    background-size: cover;
+    padding: 10em 20em 10em 20em;
+    margin-top: -2em;
+    color: #fff;
+    max-height: 30em;
+    text-align: center;
+}
+#front h2 {
+    font-family: "Montserrat Bold";
+    font-size: 2em;
+}
+#front p {
+    font-size: 1.2em;
+}
+.card {
+    padding: 2em 5em 2em 5em;
+}
+#contact {
+    background-color: rgba(255, 164, 217, 0.9);
+    padding: 2em 5em 2em 5em;
+    text-align: center;
+    margin-bottom: -2em;
+}

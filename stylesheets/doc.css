@@ -1,0 +1,71 @@
+
+.formstyles h3 {
+    font-family: "Montserrat Bold";
+    font-size: 1.5em;
+}
+.formstyles p {
+    background-color: rgba(255, 164, 217, 0.9);
+    font-size: 1.2em;
+    font-family: "Montserrat Bold";
+    width: 26em;
+    padding: 0.5em;
+    text-align: center;
+    border-radius: 50px;
+}
+.formselect {
+    background-color: rgba(130, 198, 255, 0.9);
+    border-radius: 50px;
+    border: none;
+    font-size: 1em;
+    font-family: "Montserrat";
+    padding: 0.5em;
+    width: 10em;
+    margin: 0 1em 0 1em;
+    appearance: none;
+    position: relative;
+}
+.formselect:first-of-type {
+    margin: 0 1em 0 0;
+}
+.formselect option {
+    font-family: "Montserrat";
+}
+.formstyles button {
+    background-color: #656565;
+    color: #fff;
+    font-family: "Montserrat";
+    font-size: 1em;
+    padding: 0.5em;
+    border-radius: 50px;
+    border: none;
+    width: 8em;
+    margin: 0 1em 0 1em;
+    transition: background-color 0.5s;
+
+}
+.formstyles button:hover {
+    background-color: #959595;
+}
+
+main {
+    display: grid;
+    grid-template-areas:
+        "crumbs"
+        "title"
+        "forms"
+        "counties";
+}
+.formstyles {grid-area: forms;}
+#breadcrumb {grid-area: crumbs;}
+.allcounties {grid-area: counties;}
+
+main h2 {
+    grid-area: title;
+    font-family: "Montserrat Bold";
+    font-size: 2em;
+    background-color: rgba(255, 164, 217, 0.9);
+    padding: 1.5em 1em 1.5em 1em;
+    margin: 0em -1em 2em -1em;
+    color: #fff;
+    text-align: center;
+}
