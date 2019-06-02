@@ -51,7 +51,7 @@ body {
 }
 main {
     background: linear-gradient(to bottom, #ffffff 40%,#dddddd 80%,#aaaaaa 100%);
-    height: 60vmax;
+    height: 60vmin;
 }
 footer {
     /*height: 15vh;*/
@@ -192,10 +192,10 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
 /*         MEDIA QUERIES         /*
 /* /* /* /* /* /* /* /* /* /* /* */
 @media only screen and (max-width: 1200px) {
-    #search input {visibility: hidden;}
     #headernav {
         display: grid;
-        grid-template-columns: 36% 60% 4%;
+        flex-wrap: nowrap;
+        grid-template-columns: 35% 60% 5%;
         grid-template-areas:
             "header nav search";
     }
@@ -203,8 +203,11 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
     nav {grid-area: nav;}
     #search {grid-area: search;}
     #mobiledrop {grid-area: hamburger;}
-    #headernav {
-        flex-wrap: nowrap;
+    #search input {
+        display: none;
+    }
+    #search img {
+        float: left;
     }
 }
 @media only screen and (max-width: 1024px) {
@@ -216,7 +219,6 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
     }
     header {
         margin-left: auto;
-        
     }
     nav ul {
         background-color: #82c6ff;
@@ -234,10 +236,6 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
         visibility: hidden;
         opacity: 0.0;
     }
-    #search input { 
-        width: 40%;
-        visibility: visible;
-    }
 }
 
 @media only screen and (max-width: 640px) {
@@ -253,8 +251,12 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
             "header search  hamburger"
             "nav    nav     nav";
     }
-    header span {visibility: hidden;}
-    #search input {display: none;}
+    header span {
+        visibility: hidden;
+    }
+    #search input {
+        display: none;
+    }
     #mobiledrop, #search img {
         display: inline-flex;
         background-color: #ffa4d9;
