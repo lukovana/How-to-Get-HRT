@@ -1,6 +1,6 @@
-var button = document.getElementById("mobiledrop");
-var navigation = document.getElementById("mobiledropdown");
-var display = document.getElementById("front");
+var button = document.getElementById(mobiledrop);
+var navigation = document.getElementById(mobiledropdown);
+var display = document.getElementById(front);
 var count = 0;
 
 function dropdown() {
