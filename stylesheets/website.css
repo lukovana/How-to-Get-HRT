@@ -194,11 +194,15 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
 /* /* /* /* /* /* /* /* /* /* /* */
 @media only screen and (max-width: 1024px) {
     #headernav {background-color: limegreen;}
-    #search input {width: 50%;}
-}
-@media only screen and (max-width: 640px) {
-    #headernav {background-color: magenta;}
-    #search input {width: 20%;}
+    #headernav {
+        display: grid;
+        grid-template-areas:
+            "header search"
+            "nav    nav";
+    }
+    header {grid-area: header;}
+    nav {grid-area: nav;}
+    #search {grid-area: search;}
     nav ul {
         background-color: #82c6ff;
         margin: 0;
@@ -210,4 +214,8 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
         visibility: hidden;
         opacity: 0.0;
     }
+}
+@media only screen and (max-width: 640px) {
+    #headernav {background-color: magenta;}
+    #search input {width: 50%;}
 }
