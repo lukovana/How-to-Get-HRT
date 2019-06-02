@@ -14,6 +14,8 @@ var add = (function () {
             navigation.style.display = "block";
         } else if (add() % 2 != 0 && media.matches) {
             navigation.style.display = "none";
+        } else {
+            navigation.style.display = "inline-block";
         }
 
         document.getElementById("front").innerHTML = add();
