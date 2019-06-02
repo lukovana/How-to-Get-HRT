@@ -337,7 +337,6 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
     header span {display: none;}
     header {
         width: 90%;
-        margin-left: auto;
     }
     #headernav {
         display: flex;
@@ -357,6 +356,10 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
     }
     #mobiledropdown {
         margin-top: -0.4em;
+        width: 100vw;
+    }
+    main {
+        width: 100vw;    
     }
     #mobiledropdown li {
         display: block;
