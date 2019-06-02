@@ -8,10 +8,11 @@ var add = (function () {
     function dropdown(){
         const navigation = document.getElementById("mobiledropdown");
         add();
+        const media = window.matchMedia("(max-width: 540px)")
 
-        if (add() % 2 == 0) {
+        if (add() % 2 == 0 && media.matches) {
             navigation.style.display = "block";
-        } else {
+        } else if (add() % 2 != 0 && media.matches) {
             navigation.style.display = "none";
         }
 
