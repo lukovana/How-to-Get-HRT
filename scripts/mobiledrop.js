@@ -7,10 +7,12 @@ var add = (function () {
 
     function dropdown(){
         const navigation = document.getElementById("mobiledropdown");
+        const headnav = document.getElementById("headernav");
         add();
 
         if (add() % 2 == 0) {
             navigation.style.display = "block";
+            headnav.style.height = "40vh;";
         } else {
             navigation.style.display = "none";
         }
