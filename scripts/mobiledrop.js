@@ -1,19 +1,21 @@
-var count = 0;
+var add = (function () {
+    var counter = 0;
+    return function () {
+        return counter += 1;
+    }
+})();
 
-function dropdown() {
-    const navigation = document.getElementById("mobiledropdown");
-    count += 1;
-    console.log(count);
-    if (count % 2 == 0) {
-        console.log("entered % 2")
-        navigation.style.display = "none";
-    } else {
-        console.log("entered else")
-        navigation.style.display = "block";
+    function dropdown(){
+        const navigation = document.getElementById("mobiledropdown");
+        add();
+
+        if (add() % 2 == 0) {
+            navigation.style.display = "none";
+        } else {
+            navigation.style.display = "block";
+        }
     }
 
-    return count;
-}
 /*function dropout() {
     count += 1;
     const navigation = document.getElementById("mobiledropdown");
