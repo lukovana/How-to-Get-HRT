@@ -3,7 +3,7 @@
 function search($back) {
     echo
     '<div id="mobiledrop">
-        <img src="', $back,'assets/images/hamburger.png" width="25" height="25" alt="hamburger" id="hamburger" />
+        <a href="#"><img src="', $back,'assets/images/hamburger.png" width="25" height="25" alt="hamburger" id="hamburger" /></a>
     </div>
     <form>
         <div id="search">
