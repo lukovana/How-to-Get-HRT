@@ -22,7 +22,7 @@
     <body>
         <div id="headernav">
             <?php include 'scripts/header.php'; headerfn('');?>
-            <?php include 'scripts/nav.php'; nav('pages/states/', 'pages/');?>
+            <?php include 'scripts/nav.php'; nav('pages/states/', 'pages/', '');?>
             <?php include 'scripts/search.php'; search('');?>
         </div>
         <main>
