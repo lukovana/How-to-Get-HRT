@@ -46,7 +46,7 @@ footer {grid-area: footer;}
 /************ HEADER **************/
 body {overflow-x: hidden;}
 #headernav {
-    background-color: #ff0000;
+    background-color: #efefef;
     height: 12vh;
     margin: -1em;
     padding: 1em;
