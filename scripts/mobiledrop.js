@@ -4,5 +4,5 @@ function dropdown() {
 }
 function dropout() {
     const navigation = document.getElementById("mobiledropdown");
-    navigation.style.display = "block";
+    navigation.style.display = "none";
 }
