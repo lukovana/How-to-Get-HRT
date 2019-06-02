@@ -62,7 +62,7 @@ function nav($back, $back2) {
     # everything before the loop starts
     echo 
     '<nav><ul>
-    <div class="mobiledropdown">
+    <div id="mobiledropdown">
         <div id="dropdown">
         <li class="dropbutton"><a href="', $back2, 'states.php">States</a></li>
         <div class="dropitems">

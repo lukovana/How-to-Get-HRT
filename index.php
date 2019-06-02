@@ -15,6 +15,8 @@
         <link rel="icon" href="http://example.com/favicon.ico">
         <link rel="stylesheet" href="stylesheets/website.css">
         <link rel="stylesheet" href="stylesheets/landing.css">
+
+        <script src="scripts/mobiledrop.js"></script>
     </head>
     <body>
         <div id="headernav">

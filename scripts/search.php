@@ -2,9 +2,9 @@
 
 function search($back) {
     echo
-    '<div id="mobiledrop">
-        <a href="#"><img src="', $back,'assets/images/hamburger.png" width="25" height="25" alt="hamburger" id="hamburger" /></a>
-    </div>
+    '<a href="#"><div id="mobiledrop" onclick="dropdown()" >
+        <img src="', $back,'assets/images/hamburger.png" width="25" height="25" alt="hamburger" id="hamburger" />
+    </div></a>
     <form>
         <div id="search">
             <input class="searchbox" type="text" placeholder="Search" aria-label="Search">
