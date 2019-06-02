@@ -6,10 +6,10 @@ var add = (function () {
 })();
 
     function dropdown(){
-        const navigation = document.getElementById("mobiledropdown");
-        add();
+        var navigation = document.getElementById("mobiledropdown");
+        var count = add();
 
-        if (add() % 2 == 0) {
+        if (count % 2 == 0) {
             navigation.style.display = "none";
         } else {
             navigation.style.display = "block";
