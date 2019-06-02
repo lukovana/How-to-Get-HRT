@@ -10,9 +10,9 @@ var add = (function () {
         add();
 
         if (add() % 2 == 0) {
-            navigation.style.display = "none";
-        } else {
             navigation.style.display = "block";
+        } else {
+            navigation.style.display = "none";
         }
 
         document.getElementById("front").innerHTML = add();
