@@ -340,12 +340,18 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
             "header hamburger search";
     }
     #hamburger {
-        display: inline;
+        display: table;
         background-color: #ffa4d9;
         padding: 1em;
         border-radius: 50%;
+        width: 25px;
+        height: 25px;
     }
     #mobiledropdown {
+        position: relative;
+        width: 100%;
+        right: 20em;
         display: block;
+        height: 30vh;
     }
 }

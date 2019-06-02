@@ -69,7 +69,6 @@ function nav($back, $back2) {
     </div>
 
     <nav><ul>
-    <div id="mobiledropdown">
 
         <div id="dropdown">
         <li class="dropbutton mobiledropitem"><a href="', $back2, 'states.php">States</a></li>
@@ -93,7 +92,6 @@ function nav($back, $back2) {
                 <li class="mobiledropitem"><a href="', $back2, 'faq.php">FAQ</a></li>
                 <li class="mobiledropitem"><a href="', $back2, 'contact.php">Contact Us</a></li>
                 <li class="mobiledropitem"><a href="', $back2, 'about.php">About Us</a></li>
-        </div>
         </ul>
     </nav>';
 };
