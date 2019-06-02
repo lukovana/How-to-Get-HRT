@@ -267,7 +267,6 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
     }
     nav ul {
         background-color: #82c6ff;
-        margin: 0 auto 0 auto;
         text-align: center;
     }
     nav li {
@@ -335,16 +334,18 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
 }
 @media only screen and (max-width: 560px) {
     header span {display: none;}
+    #headernav {
+        display: grid;
+        grid-template-areas: 
+            "header hamburger search";
+    }
     #hamburger {
         display: inline;
+        background-color: #ffa4d9;
+        padding: 1em;
+        border-radius: 50%;
     }
-
-}
-@media only screen and (max-width: 360px) {
-    #headernav {
-        grid-template-columns: 60% 20% 20%;
-    }
-    #hamburger {
-        margin-right: 8em;
+    #mobiledropdown {
+        display: block;
     }
 }

@@ -61,30 +61,34 @@ function nav($back, $back2) {
 
     # everything before the loop starts
     echo 
-    '<a href="#" onclick="dropdown()">
-    <img src="', $back3,'assets/images/hamburger.png" width="25" height="25" alt="hamburger" id="hamburger" />
-    </a>
+    '
+    <div id="hamburger">
+        <a href="#" onclick="dropdown()">
+        <img src="', $back3,'assets/images/hamburger.png" width="25" height="25" alt="hamburger" />
+        </a>
+    </div>
 
     <nav><ul>
     <div id="mobiledropdown">
+
         <div id="dropdown">
         <li class="dropbutton mobiledropitem"><a href="', $back2, 'states.php">States</a></li>
-        <div class="dropitems">
-        <div class="states">';
+            <div class="dropitems">
+                <div class="states">';
 
-            # loop start: 0-49
-            for($i = 0; $i < $stateslength; $i++) {
-            echo    '<a href="', $back, $states[$i][0], 
-                    '/state.php">', $states[$i][1], '</a>';
-            if ($i == 9 || $i == 19 || $i == 29 || $i == 39 ) {
-            echo    '</div><div class="states">';
-            }
-            };
+                    # loop start: 0-49
+                    for($i = 0; $i < $stateslength; $i++) {
+                    echo    '<a href="', $back, $states[$i][0], 
+                            '/state.php">', $states[$i][1], '</a>';
+                    if ($i == 9 || $i == 19 || $i == 29 || $i == 39 ) {
+                    echo    '</div><div class="states">';
+                    }
+                    };
 
-        # closing tags for the nav
-        echo
-        '</div>
-        </div>
+                # closing tags for the nav
+                echo
+                '</div>
+            </div>
         </div>
                 <li class="mobiledropitem"><a href="', $back2, 'faq.php">FAQ</a></li>
                 <li class="mobiledropitem"><a href="', $back2, 'contact.php">Contact Us</a></li>
