@@ -13,7 +13,7 @@
         <title>How to Get HRT</title>
         
         <link rel="icon" href="http://example.com/favicon.ico">
-        <link rel="stylesheet" href="stylesheets/main.css">
+        <link rel="stylesheet" href="stylesheets/website.css">
         <link rel="stylesheet" href="stylesheets/landing.css">
     </head>
     <body>
