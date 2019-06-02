@@ -262,12 +262,21 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
         border-radius: 50%;
     }
     
-    #mobiledropdown {display: none;}
-    #mobiledrop:hover {
-        background-color: #656565
+    #mobiledropdown {
+        display: none;
+        margin-left: -2.1em;
     }
-    nav li {
+    #mobiledropdown li {
         display: block;
+        width: 100%;  
+    }
+    #dropdown li {
+        display: block;
+        width: 100%;
+    }
+    }
+    nav li:hover {
+        background-color: #656565;
     }
 }
 @media only screen and (max-width: 360px) {
