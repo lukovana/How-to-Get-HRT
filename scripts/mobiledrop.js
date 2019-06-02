@@ -8,8 +8,8 @@ function dropdown() {
     console.log = "This is count ", count;
 
     if (count % 2 == 0) {
-        navigation.style.display = "none;";
+        navigation.style.display = "none";
     } else {
-        navigation.style.display = "block;";
+        navigation.style.display = "block";
     }
 }
