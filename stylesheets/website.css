@@ -266,6 +266,9 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
     #mobiledrop:hover {
         background-color: #656565
     }
+    nav li {
+        display: block;
+    }
 }
 @media only screen and (max-width: 360px) {
     #headernav {
