@@ -36,15 +36,16 @@ body {
 #headernav {
     display: grid;
     width: 100%;
-    grid-template-columns: 33% auto 28%;
+    grid-template-columns: 33% 50% auto auto;
     grid-template-areas: 
-        "header nav search";
+        "header nav mobile search";
 }
 #headernav {grid-area: headernav;}
 header {grid-area: header;}
 nav {grid-area: nav;}
 main {grid-area: main;}
 #search {grid-area: search;}
+#mobiledrop {grid-area: mobile; display: none;}
 footer {grid-area: footer;} 
 #breadcrumb {grid-area: breadcrumb;}
 
@@ -60,4 +61,124 @@ footer {
     /*height: 15vh;*/
     background-color: rgba(130, 198, 255, 0.9);
     color: #fff;
+}
+/*  NAVIGATION STYLES       */
+#headernav {
+    background-color: #efefef;
+}
+header {
+    color: #fff;
+}
+header img {
+    float: left;
+}
+#headernav span a {
+    text-align: left;
+    font-family: "Montserrat Bold";
+    color: #656565;
+    text-decoration: none;
+}
+nav li a {
+    text-decoration: none;
+    color: #656565;
+    padding: 1em;
+}
+nav ul {
+    font-size: 1.2em;
+    font-family: "Montserrat Med";
+    text-transform: uppercase;
+}
+nav li {
+    border-radius: 50px;
+}
+nav #dropdown {
+    border-radius: 50px 50px 0 0;
+}
+nav li, nav #dropdown {
+    display: inline-block;
+    transition: background-color 0.5s;
+}
+nav li:hover, nav #dropdown:hover {
+    background-color: #82c6ff;
+}
+nav li a:hover, nav #dropdown .dropbutton a:hover {
+	color: #fff;
+}
+/*  DROPDOWN STYLES         */
+.dropitems {
+    display: grid;
+    grid-template-areas:
+        "A B C D E F";
+
+	visibility: hidden;
+    position: absolute;
+    /*margin-left: -10em;*/
+	background-color: rgba(244,240,236,0.0);
+    z-index: 1;
+    
+    /*max-height: 20em;
+    min-width: 20em;*/
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.states:first-child {grid-area: A;}
+.states:nth-child(2) {grid-area: B;}
+.states:nth-child(3) {grid-area: C;}
+.states:nth-child(4) {grid-area: D;}
+.states:nth-child(5) {grid-area: E;}
+.states:last-child {grid-area: F;}
+
+.dropitems a {
+	text-decoration: none;
+	color: #fff;
+    display: block;
+    /*padding: 1em 1em 0 1em;*/
+    font-size: 0.7em;
+}
+#dropdown:hover .dropitems {
+	visibility: visible;
+	background-color: #82c6ff;
+    color: #fff;
+    box-shadow: 2px 2px 10px #959595;
+    opacity: 1.0;
+}
+.dropitems a:hover {
+	color: #656565;
+}
+#dropdown:hover .dropbutton a {
+	color: #fff;
+}
+
+/*  SEARCH BAR          */
+#search input {
+    background-color: #fff;
+    border: none;
+    font-family: Montserrat;
+    border-radius: 50px;
+    font-size: 1.2em;
+    color: #656565;
+}
+
+/*  BREADCRUMBS         */
+#breadcrumb {
+    background-color: rgba(130, 198, 255, 0.9);
+    
+}
+#breadcrumb li {
+    display: inline-block;
+    color: #fff;
+}
+#breadcrumb .current {
+    font-family: "Montserrat Med";
+}
+#breadcrumb .statelink {
+    font-family: "Montserrat Med";
+    color: #fff;
+}
+#breadcrumb li a {
+    color: #fff;
+    text-decoration: none;
+}
+#breadcrumb li a:hover {
+    color: #4d9fd0;
 }
