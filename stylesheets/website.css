@@ -87,7 +87,7 @@ nav ul {
     font-family: "Montserrat Med";
     text-transform: uppercase;
 }
-nav li {
+nav li:not(#dropdown){
     border-radius: 50px;
 }
 nav #dropdown {
@@ -118,6 +118,7 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
 	background-color: rgba(244,240,236,0.0);
     z-index: 1;
     
+    padding: 2em;
     max-height: 20em;
     min-width: 20em;
     opacity: 0;
@@ -153,13 +154,15 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
 
 /*  SEARCH BAR          */
 #search input {
-    margin-top: 1em;
     background-color: #fff;
     border: none;
     font-family: Montserrat;
     border-radius: 50px;
     font-size: 1.2em;
     color: #656565;
+}
+#search img {
+    margin-top: -0.5em;
 }
 
 /*  BREADCRUMBS         */
