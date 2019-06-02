@@ -335,6 +335,9 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
 }
 @media only screen and (max-width: 560px) {
     header span {display: none;}
+    #hamburger {
+        display: inline;
+    }
 
 }
 @media only screen and (max-width: 360px) {
