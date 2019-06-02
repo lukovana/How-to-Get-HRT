@@ -8,16 +8,15 @@ var add = (function () {
     function dropdown(){
         const navigation = document.getElementById("mobiledropdown");
         add();
-        const media = window.matchMedia("(max-width: 540px)")
 
-        if (add() % 2 == 0 && media.matches) {
+        if (add() % 2 == 0) {
             navigation.style.display = "block";
-        } else if (add() % 2 != 0 && media.matches) {
+        } else {
             navigation.style.display = "none";
         }
 
+        document.getElementById("front").innerHTML = add();
     }
-
 
 /*function dropout() {
     count += 1;
