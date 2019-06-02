@@ -149,15 +149,18 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
 }
 
 /*  SEARCH BAR          */
-#search input {
+#searchbox {
     background-color: #fff;
-    border: none;
+    border: solid 3px #ffa4d9;
     font-family: Montserrat;
     border-radius: 50px;
     font-size: 1.2em;
     color: #656565;
-    margin-left: 1em;
-    width: 50%;
+}
+#searchimg {
+    background-color: #ffa4d9;
+    padding: 1em;
+    border-radius: 50%;
 }
 
 /*  BREADCRUMBS         */
