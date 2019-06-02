@@ -296,7 +296,7 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
         padding-left: 1em;
         width: 50%;
         transition: width 2s;
-        
+    }
     #searchimg:hover ~ #searchbox {
         width: 70%;
     }
