@@ -1,7 +1,8 @@
 var button = document.getElementById("mobiledrop");
-var navigation = document.getElementById("mobiledropdown"), count = 0;
+var navigation = document.getElementById("mobiledropdown");
+var count = 0;
 
-button.onclick  = function () {
+function dropdown() {
     count += 1;
 
     navigation.style.display = "block;";
