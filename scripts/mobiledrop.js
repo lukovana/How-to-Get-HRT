@@ -3,7 +3,7 @@ var count = 0;
 function dropdown() {
     const navigation = document.getElementById("mobiledropdown");
     count += 1;
-    console.log(count)
+    console.log(count);
     if (count % 2 == 0) {
         console.log("entered % 2")
         navigation.style.display = "none";
@@ -11,6 +11,8 @@ function dropdown() {
         console.log("entered else")
         navigation.style.display = "block";
     }
+
+    return count;
 }
 /*function dropout() {
     count += 1;
