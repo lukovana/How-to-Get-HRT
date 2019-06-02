@@ -100,7 +100,7 @@ nav li:hover, nav #dropdown:hover {
 nav li a:hover, nav #dropdown .dropbutton a:hover {
 	color: #fff;
 }
-#mobiledrop {
+#hamburger {
     display: none;
 }
 /*  DROPDOWN STYLES         */
@@ -226,7 +226,7 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
     header {grid-area: header;}
     nav {grid-area: nav;}
     #searchbar {grid-area: search;}
-    #mobiledrop {grid-area: hamburger;}
+    #hamburger {grid-area: hamburger;}
     
     #searchbar {
         width: 6em;
@@ -341,7 +341,7 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
     #headernav {
         grid-template-columns: 60% 20% 20%;
     }
-    #mobiledrop {
+    #hamburger {
         margin-right: 8em;
     }
 }

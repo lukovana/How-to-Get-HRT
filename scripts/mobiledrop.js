@@ -6,7 +6,7 @@ var add = (function () {
 })();
 
     function dropdown(){
-        const navigation = document.getElementByClassName("mobiledropdown");
+        const navigation = document.getElementByClassName("mobiledropitem");
         const headnav = document.getElementById("headernav");
         add();
 
