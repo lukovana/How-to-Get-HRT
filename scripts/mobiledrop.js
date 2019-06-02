@@ -1,5 +1,5 @@
-var button = document.getElementById("mobiledropdown");
-var navigation = document.getElementById("mobiledrop"), count = 0;
+var button = document.getElementById("mobiledrop");
+var navigation = document.getElementById("mobiledropdown"), count = 0;
 
 button.onclick  = function () {
     count += 1;
