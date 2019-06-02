@@ -350,7 +350,6 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
         height: 25px;
     }
     nav ul {
-        position: absolute;
         width: 100%;
         right: 0;
         margin-top: 0;
