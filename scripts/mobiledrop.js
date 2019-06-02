@@ -7,7 +7,7 @@ function dropdown(){
     } else {
         navigation.style.display = "block";
     }
-
+    document.getElementById("front").innerHTML = count;
     return function () {return count += 1;}
 }
 
