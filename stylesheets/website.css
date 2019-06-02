@@ -1,0 +1,63 @@
+/*
+    CSS meant to encompass the entire site. INCLUDING mobile optimization
+    blue        = #82c6ff = rgba(130, 198, 255, x)
+    dark blue   = #4d9fd0;
+    pink        = #ffa4d9 = rgba(255, 164, 217, x)
+    dark pink   = 
+    gray        = #656565;
+    dark gray   = #454545;
+
+*/
+/*****FONTS******************************/
+@font-face {
+    font-family: Montserrat;
+    src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf")
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("../assets/fonts/Montserrat/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Med";
+    src: url("../assets/fonts/Montserrat/Montserrat-Medium.ttf");
+}
+
+/*  DEFAULT LAYOUT      */
+body {
+    display: grid;
+    grid-template-areas:
+        "headernav"
+        "breadcrumb"
+        "main"
+        "footer";
+}
+#headernav {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33% auto 28%;
+    grid-template-areas: 
+        "header nav search";
+}
+#headernav {grid-area: headernav;}
+header {grid-area: header;}
+nav {grid-area: nav;}
+main {grid-area: main;}
+#search {grid-area: search;}
+footer {grid-area: footer;} 
+#breadcrumb {grid-area: breadcrumb;}
+
+/*  GENERAL STYLES         */
+body {
+    font-family: Montserrat, Helvetica, sans-serif;
+    /*height: 100vh;*/
+}
+main {
+    background: linear-gradient(to bottom, #ffffff 40%,#dddddd 80%,#aaaaaa 100%);
+}
+footer {
+    /*height: 15vh;*/
+    background-color: rgba(130, 198, 255, 0.9);
+    color: #fff;
+}
