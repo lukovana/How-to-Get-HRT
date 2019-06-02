@@ -1,6 +1,6 @@
+var count = 1;
 function dropdown(){
     var navigation = document.getElementById("mobiledropdown");
-    var count = 1;
 
     if (count % 2 == 0) {
         navigation.style.display = "none";
@@ -8,6 +8,7 @@ function dropdown(){
         navigation.style.display = "block";
     }
     document.getElementById("front").innerHTML = count;
+
     return function () {return count += 1;}
 }
 
