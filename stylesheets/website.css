@@ -193,9 +193,11 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
 /*         MEDIA QUERIES         /*
 /* /* /* /* /* /* /* /* /* /* /* */
 @media only screen and (max-width: 1280px) {
+    #headernav {background-color: limegreen;}
     #search input {width: 50%;}
 }
 @media only screen and (max-width: 860px) {
+    #headernav {background-color: magenta;}
     #search input {width: 20%;}
     nav ul {
         background-color: #82c6ff;
