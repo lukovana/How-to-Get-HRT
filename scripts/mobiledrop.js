@@ -15,7 +15,6 @@ var add = (function () {
             navigation.style.display = "block";
         }
 
-        document.getElementById("front").innerHTML = add();
     }
 
 /*function dropout() {
