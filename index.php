@@ -20,10 +20,12 @@
 
     </head>
     <body>
-        <div id="headernav">
-            <?php include 'templates/header.php'; headerfn('');?>
-            <?php include 'templates/nav.php'; nav('pages/states/', 'pages/', '');?>
-            <?php include 'templates/search.php'; search('');?>
+        <div class="wrapper" id="h_wrapper">
+            <div id="headernav">
+                <?php include 'templates/header.php'; headerfn('');?>
+                <?php include 'templates/nav.php'; nav('pages/states/', 'pages/', '');?>
+                <?php include 'templates/search.php'; search('');?>
+            </div>
         </div>
         <main>
             <section class="front">
