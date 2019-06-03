@@ -30,61 +30,6 @@
                 <h2>We are here to help!</h2>
                 <p>Every single step of the way.</p>
             </section>
-            <section class="card">
-                <h3>How to get insurance in your state.</h3>
-                <p>Interested in the process of getting health insurance? We can do it together!</p>
-            </section>
-            <section class="card">
-                <h3>Gender Affirming Healthcare</h3>
-                <p>Guidance in finding local Psychologists, Endocrinologists, Physicians, and Therapists. </p>
-            </section>
-            <section class="card">
-                <h3>Surgeries</h3>
-                <p>Don't know where to start? Let's start from step one.</p>
-            </section>
-            <section id="contact">
-                Have more questions? Shoot us an Email or a text message!
-
-                <?php
-                $name = $message = "";
-                if ($_SERVER["REQUEST_METHOD"] == "POST") {
-                    $name = test_input($_POST["name"]);
-                $message = test_input($_POST["message"]);
-                }
-                function test_input($data) {
-                    $data = trim($data);
-                    $data = stripslashes($data);
-                    $data = htmlspecialchars($data);
-                    return $data;
-                }
-                ?>
-
-                <form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
-                    Name: <input type="text" name="name" value="<?php echo $name;?>"><br>
-                    Message: <textarea name="message"><?php echo $message;?></textarea><br>
-                    <select name="snacks">
-                        <option value="CocaCola">CocaCola</option>
-                        <option value="Popcorn">Popcorn</option>
-                        <option value="Peanuts">Peanuts</option>
-                    </select><br>
-
-                    <input type="submit" name="submit" value="Submit">
-                </form>
-
-                <?php   echo $name, "<br>"; 
-                        echo $message, "<br>";
-                        $snacks = $_POST['snacks'];
-                        echo $snacks
-                ?>
-
-                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="donate">
-                    <input type="hidden" name="cmd" value="_donations" />
-                    <input type="hidden" name="business" value="bellis@howtogethrt.com" />
-                    <input type="hidden" name="currency_code" value="USD" />
-                    <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
-                    <img alt="donate buttons" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
-                </form>
-            </section>
         </main>
         <?php include 'scripts/footer.html';?>
     </body>
