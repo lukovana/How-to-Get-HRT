@@ -33,30 +33,19 @@ body {
         "main"
         "footer";
 }
-/*#headernav {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-}*/
+
 #h_wrapper {
     display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
     overflow: hidden;
-    
+    height: 8vh;
 }
 #headernav {
     display: grid;
     width: 100%;
     grid-template-areas: "header nav search";
+    align-items: center;
+    justify-content: stretch;
 }
-/*#h_wrapper {
-    display: grid;
-    width: 100%;
-    grid-template-areas: "header nav search";
-}*/
 #headernav {grid-area: headernav;}
 #breadcrumb {grid-area: breadcrumb;}
 main {grid-area: main;}
@@ -65,6 +54,7 @@ footer {grid-area: footer;}
 header {grid-area: header;}
 nav {grid-area: nav;}
 form #searchbar {grid-area: search;}
+#_hamburger {grid-area: hamburger;}
 
 /*  GENERAL STYLES         */
 body {
@@ -75,7 +65,7 @@ body {
 }
 main {
     background: linear-gradient(to bottom, #ffffff 40%,#dddddd 80%,#aaaaaa 100%);
-    height: 40vmax;
+    height: 70vmax; /* CHANGE */
 }
 footer {
     /*height: 15vh;*/
@@ -86,8 +76,9 @@ footer {
 }
 /*  NAVIGATION STYLES       */
 #headernav {
+    position: absolute;
+    top: 0;
     background-color: #efefef;
-    height: 30vh;
 }
 header {
     color: #fff;
@@ -115,15 +106,16 @@ nav ul {
 }
 nav li, nav #dropdown {
     display: inline-block;
-    transition: background-color 0.5s;
+    border-bottom: solid 3px #efefef;
+    transition: border-bottom 0.1s;
 }
-nav li:hover, nav #dropdown:hover {
-    background-color: #82c6ff;
+nav li:hover {
+    border-bottom: solid 3px #82c6ff;
 }
-nav li a:hover, nav #dropdown .dropbutton a:hover {
-	color: #fff;
+nav li a:hover {
+	color: #82c6ff;
 }
-#hamburger {
+#_hamburger {
     display: none;
 }
 /*  DROPDOWN STYLES         */
@@ -136,7 +128,7 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
     position: absolute;
     /*margin-left: -10em;*/
 	background-color: rgba(244,240,236,0.0);
-    z-index: 1;
+    z-index: 3;
     
     padding: 2em;
     max-height: 20em;
@@ -165,15 +157,26 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
     box-shadow: 2px 2px 10px #959595;
     opacity: 1.0;
 }
+/* MAY NEED TO DO AN ONMOUSEOVER EVENT OR SOMETHIGN */
+.dropitems:hover ~ .dropbutton {
+    background-color: #82c6ff;
+}
 .dropitems a:hover {
 	color: #656565;
 }
 #dropdown:hover .dropbutton a {
 	color: #fff;
 }
-
+nav .dropbutton {
+    background-color: none;
+    transition: background-color 0.1s;
+}
+nav .dropbutton:hover {
+    background-color: #82c6ff;
+    color: #fff;
+}
 /*  SEARCH BAR          */
-._contain {
+._contain { /* Also applies to the hamburger */
     width: 20px;
     height: 20px;
     padding: 1em;
@@ -181,8 +184,13 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
     background-color: #ffa4d9;
     z-index: 2;
 }
+#_searchimg {
+    position: absolute;
+    top: 1vw;
+}
 #searchbox {
     padding-left: 1em;
+    padding: 1vw 0 1vw 5vw;
     background-color: #fff;
     border: none;
     font-family: Montserrat;
