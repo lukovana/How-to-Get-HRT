@@ -106,6 +106,8 @@ nav ul {
 }
 nav li, nav #dropdown {
     display: inline-block;
+}
+nav li:not(.dropbutton) {
     border-bottom: solid 3px #efefef;
     transition: border-bottom 0.1s;
 }
@@ -169,7 +171,8 @@ nav li a:hover {
 }
 nav .dropbutton {
     background-color: none;
-    transition: background-color 0.1s;
+    border-bottom: solid 3px #efefef;
+    transition: background-color 0.1s, border-bottom 0.1s;
 }
 nav .dropbutton:hover {
     background-color: #82c6ff;
@@ -184,11 +187,15 @@ nav .dropbutton:hover {
     background-color: #ffa4d9;
     z-index: 2;
 }
+#searchbar {
+    width: 60%;
+}
 #_searchimg {
     position: absolute;
     top: 1vw;
 }
 #searchbox {
+    width: 100%;
     padding-left: 1em;
     padding: 1vw 0 1vw 5vw;
     background-color: #fff;
@@ -228,3 +235,81 @@ nav .dropbutton:hover {
 /* /* /* /* /* /* /* /* /* /* /* /*
 /*         MEDIA QUERIES         /*
 /* /* /* /* /* /* /* /* /* /* /* */
+@media only screen and (max-width: 1280px) {
+    #headernav {
+    grid-template-columns: 35% 50% auto;
+    }
+    #searchbar {
+        width: 40%;
+    }
+}
+@media only screen and (max-width: 1120px) {
+    #headernav {
+        grid-template-columns: 20% 50% auto;
+        grid-template-areas:
+            "header header search"
+            "nav    nav    nav";
+    }
+    #searchbar {
+        width: 80%;
+    }
+    nav {
+        background-color: #656565;
+    }
+    nav ul {
+        text-align: center;
+    }
+    nav li {
+        margin: 0 1em 0 1em;
+        border-bottom: solid 3px #656565;
+    }
+    nav li a {
+        color: #fff;
+    }
+    nav li:not(.dropbutton) {
+        border-bottom: solid 3px #656565;
+    }
+    nav li:hover {
+        border-bottom: solid 3px #82c6ff;
+    }
+    nav .dropbutton {
+        background-color: none;
+        border-bottom: solid 3px #656565;
+        transition: background-color 0.1s, border-bottom 0.1s;
+    }
+    #dropdown:hover .dropitems {
+        visibility: hidden;
+    }
+    #dropdown:hover .dropbutton a {
+        color: #82c6ff;
+    }
+    nav .dropbutton {
+        background-color: none;
+        transition: none;
+    }
+    nav .dropbutton:hover {
+        background-color: transparent;
+        color: #82c6ff;
+    }
+}
+@media only screen and (max-width: 720px) {
+    nav li {
+        margin: 0;
+        border-bottom: solid 3px #656565;
+    }
+}
+@media only screen and (max-width: 540px) {
+    header span {display: none;}
+    nav li, nav #dropdown {
+        text-align: left;
+        display: block;
+        align-self: flex-start;
+        margin: 2vw 0vw 2vw -10vw;
+    }
+    nav #dropdown {
+        margin: 2vw 0vw 2vw 0vw;
+    }
+    #searchbox {
+        display: none;
+    }
+}

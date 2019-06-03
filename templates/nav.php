@@ -64,7 +64,7 @@ function nav($back, $back2, $back3) {
     '
     <div class="_contain" id="_hamburger">
         <a href="#" onclick="dropdown()">
-        <img src="', $back3,'assets/images/hamburger.svg" width="15" height="15" alt="hamburger" id="hamburger"/>
+        <img src="', $back3,'assets/images/hamburger.svg" width="20" height="20" alt="hamburger" id="hamburger"/>
         </a>
     </div>
 
