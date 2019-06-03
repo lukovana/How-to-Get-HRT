@@ -272,11 +272,6 @@ nav .dropbutton:hover {
     nav li:hover {
         border-bottom: solid 3px #82c6ff;
     }
-    nav .dropbutton {
-        background-color: none;
-        border-bottom: solid 3px #656565;
-        transition: background-color 0.1s, border-bottom 0.1s;
-    }
     #dropdown:hover .dropitems {
         visibility: hidden;
     }
@@ -299,17 +294,70 @@ nav .dropbutton:hover {
     }
 }
 @media only screen and (max-width: 540px) {
+    #headernav {
+        grid-template-columns: auto auto auto;
+        grid-template-areas: 
+            "header hamburger search"
+            "nav nav nav";
+    }
+    header {
+        width: 50%;
+    }
+    #logo {
+        width: 80px;
+    }
     header span {display: none;}
+    nav {
+        background-color: transparent;
+        margin: -5vw 0;
+    }
+    nav ul {
+        background-color: #656565;
+    }
+    nav li a {
+        color: #656565;
+    }
     nav li, nav #dropdown {
+        background-color: #e6e6e6;
         text-align: left;
         display: block;
         align-self: flex-start;
-        margin: 2vw 0vw 2vw -10vw;
+        margin: 0.3vw 0vw 0.3vw -10vw;
+        padding: 0.5em 0;
     }
     nav #dropdown {
-        margin: 2vw 0vw 2vw 0vw;
+        margin: -0.1vw;
+        padding: 0;
+    }
+    nav li:not(.dropbutton) {
+        border-bottom: none;
+    }
+    nav li:hover {
+        background-color: rgba(101,101,101,0.7);
+        border-bottom: none;
+    }
+    nav .dropbutton {
+        border-top: solid 1px #656565;
+        border-bottom: none;
+    }
+    nav .dropbutton:hover {
+        background-color: rgba(101,101,101,0.7);
+    }
+    nav li a:hover, nav .dropbutton a:hover {
+        color: #fff;
     }
     #searchbox {
         display: none;
+    }
+    #_hamburger {
+        display: inline;
+        margin: 0 0 0 40vw;
+    }
+    #_searchimg {
+        position: static;
+        margin: 0 0 0 -5vw;
+    }
+    #searchbar {
+        width: 20px;
     }
 }
