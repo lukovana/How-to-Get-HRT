@@ -54,7 +54,7 @@ $states = array(
             );
 $stateslength = count($states);
 
-function nav($back, $back2) {
+function nav($back, $back2, $back3) {
 
     global $states;
     global $stateslength;
@@ -62,14 +62,13 @@ function nav($back, $back2) {
     # everything before the loop starts
     echo 
     '
-    <div id="hamburger">
+    <div class="_contain">
         <a href="#" onclick="dropdown()">
-        <img src="', $back3,'assets/images/hamburger.png" width="25" height="25" alt="hamburger" />
+        <img src="', $back3,'assets/images/hamburger.svg" width="15" height="15" alt="hamburger" id="hamburger"/>
         </a>
     </div>
 
     <nav><ul>
-
         <div id="dropdown">
         <li class="dropbutton mobiledropitem"><a href="', $back2, 'states.php">States</a></li>
             <div class="dropitems">
@@ -94,22 +93,6 @@ function nav($back, $back2) {
                 <li class="mobiledropitem"><a href="', $back2, 'about.php">About Us</a></li>
         </ul>
     </nav>';
-};
-
-function statepage($back) {
-
-    global $states;
-    global $stateslength;
-
-    # everything before the loop starts
-    echo '<ul>';
-
-    for($i = 0; $i < $stateslength; $i++) {
-        echo    '<li class="statebutton"><a href="', $back, $states[$i][0], 
-                '/state.php">', $states[$i][1], '</a></li>';
-    }
-
-    echo '</ul>';
 };
 
 ?>

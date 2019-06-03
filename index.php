@@ -21,16 +21,16 @@
     </head>
     <body>
         <div id="headernav">
-            <?php include 'scripts/header.php'; headerfn('');?>
-            <?php include 'scripts/nav.php'; nav('pages/states/', 'pages/', '');?>
-            <?php include 'scripts/search.php'; search('');?>
+            <?php include 'templates/header.php'; headerfn('');?>
+            <?php include 'templates/nav.php'; nav('pages/states/', 'pages/', '');?>
+            <?php include 'templates/search.php'; search('');?>
         </div>
         <main>
-            <section id="front">
+            <section class="front">
                 <h2>We are here to help!</h2>
                 <p>Every single step of the way.</p>
             </section>
         </main>
-        <?php include 'scripts/footer.html';?>
+        <?php include 'templates/footer.php';?>
     </body>
 </html>
