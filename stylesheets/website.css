@@ -33,15 +33,38 @@ body {
         "main"
         "footer";
 }
-#headernav {
+/*#headernav {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: nowrap;
+}*/
+#h_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    
 }
+#headernav {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header nav search";
+}
+/*#h_wrapper {
+    display: grid;
+    width: 100%;
+    grid-template-areas: "header nav search";
+}*/
 #headernav {grid-area: headernav;}
+#breadcrumb {grid-area: breadcrumb;}
 main {grid-area: main;}
 footer {grid-area: footer;} 
-#breadcrumb {grid-area: breadcrumb;}
+
+header {grid-area: header;}
+nav {grid-area: nav;}
+form #searchbar {grid-area: search;}
 
 /*  GENERAL STYLES         */
 body {
@@ -52,7 +75,7 @@ body {
 }
 main {
     background: linear-gradient(to bottom, #ffffff 40%,#dddddd 80%,#aaaaaa 100%);
-    height: 60vmin;
+    height: 40vmax;
 }
 footer {
     /*height: 15vh;*/
@@ -64,7 +87,7 @@ footer {
 /*  NAVIGATION STYLES       */
 #headernav {
     background-color: #efefef;
-    height: 10vh;
+    height: 30vh;
 }
 header {
     color: #fff;
@@ -175,8 +198,6 @@ nav li a:hover, nav #dropdown .dropbutton a:hover {
 }
 #breadcrumb li {
     display: inline-block;
-    margin-left: 0.2em;
-    margin-right: 0.2em;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
     color: #fff;
