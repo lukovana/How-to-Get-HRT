@@ -57,9 +57,11 @@ form #searchbar {grid-area: search;}
 #_hamburger {grid-area: hamburger;}
 
 /*  GENERAL STYLES         */
+html {
+    overflow-x: hidden;
+}
 body {
     font-family: Montserrat, Helvetica, sans-serif;
-    overflow-x: hidden;
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -238,7 +240,7 @@ nav .dropbutton:hover {
 /* /* /* /* /* /* /* /* /* /* /* */
 @media only screen and (max-width: 1280px) {
     #headernav {
-        grid-template-columns: 35% 50% auto;
+    grid-template-columns: 35% 50% auto;
     }
     #searchbar {
         width: 40%;
@@ -296,7 +298,7 @@ nav .dropbutton:hover {
 }
 @media only screen and (max-width: 540px) {
     #headernav {
-        grid-template-columns:;
+        grid-template-columns: auto auto auto;
         grid-template-areas: 
             "header hamburger search"
             "nav nav nav";
@@ -347,8 +349,6 @@ nav .dropbutton:hover {
     nav li a:hover, nav .dropbutton a:hover {
         color: #fff;
     }
-    #_searchimg._contain {
-    }
     #searchbox {
         display: none;
     }
@@ -358,6 +358,7 @@ nav .dropbutton:hover {
     }
     #_searchimg {
         position: static;
+        margin: 0 0 0 -5vw;
     }
     #searchbar {
         width: 20px;
