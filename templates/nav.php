@@ -62,7 +62,7 @@ function nav($back, $back2, $back3) {
     # everything before the loop starts
     echo 
     '
-    <div class="_contain">
+    <div class="_contain" id="_hamburger">
         <a href="#" onclick="dropdown()">
         <img src="', $back3,'assets/images/hamburger.svg" width="15" height="15" alt="hamburger" id="hamburger"/>
         </a>
