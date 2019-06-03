@@ -171,6 +171,12 @@ nav a:hover, nav #dropdown a:hover {
 #searchbox {
     display: none; /*delete evventualy*/
 }
+#_searchimg {
+	width: 100%;
+}
+#headernav form {
+	width: 20px;
+}
 /* /* /* /* /* /* /* /* /* /* /* /*
 /*         MEDIA QUERIES         /*
 /* /* /* /* /* /* /* /* /* /* /* *//*
