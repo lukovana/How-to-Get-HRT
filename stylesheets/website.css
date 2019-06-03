@@ -57,11 +57,9 @@ form #searchbar {grid-area: search;}
 #_hamburger {grid-area: hamburger;}
 
 /*  GENERAL STYLES         */
-html {
-    overflow-x: hidden;
-}
 body {
     font-family: Montserrat, Helvetica, sans-serif;
+    overflow-x: hidden;
     height: 100vh;
     width: 100vw;
     margin: 0;
@@ -190,14 +188,8 @@ nav .dropbutton:hover {
     background-color: #ffa4d9;
     z-index: 2;
 }
-#searchbar {
-    width: 60%;
-}
-#_searchimg {
-    position: absolute;
-    top: 1vw;
-}
 #searchbox {
+    display: none; /*delete evventualy*/
     width: 100%;
     padding-left: 1em;
     padding: 1vw 0 1vw 5vw;
@@ -253,9 +245,6 @@ nav .dropbutton:hover {
             "header header search"
             "nav    nav    nav";
     }
-    #searchbar {
-        width: 80%;
-    }
     nav {
         background-color: #656565;
     }
@@ -295,7 +284,7 @@ nav .dropbutton:hover {
         margin: 0;
         border-bottom: solid 3px #656565;
     }
-}
+}/*
 @media only screen and (max-width: 540px) {
     #headernav {
         grid-template-columns: auto auto auto;
@@ -349,18 +338,8 @@ nav .dropbutton:hover {
     nav li a:hover, nav .dropbutton a:hover {
         color: #fff;
     }
-    #searchbox {
-        display: none;
-    }
     #_hamburger {
         display: inline;
-        margin: 0 0 0 40vw;
     }
-    #_searchimg {
-        position: static;
-        margin: 0 0 0 -5vw;
-    }
-    #searchbar {
-        width: 20px;
-    }
-}
+
+}*/
