@@ -93,11 +93,6 @@ header img {
     text-decoration: none;
     font-size: 2em;
 }
-nav li a {
-    text-decoration: none;
-    color: #656565;
-    padding: 1em;
-}
 nav ul {
     font-size: 1.2em;
     font-family: "Montserrat Med";
@@ -105,15 +100,13 @@ nav ul {
 }
 nav li, nav #dropdown {
     display: inline-block;
+	margin: 0 0.5vw;
 }
-nav li:not(.dropbutton) {
-    border-bottom: solid 3px #efefef;
-    transition: border-bottom 0.1s;
+nav li a, nav #dropdown li a {
+	color: #656565;
+	text-decoration: none;
 }
-nav li:hover {
-    border-bottom: solid 3px #82c6ff;
-}
-nav li a:hover {
+nav li a:hover, nav #dropdown li a:hover {
 	color: #82c6ff;
 }
 #_hamburger {
@@ -158,25 +151,6 @@ nav li a:hover {
     box-shadow: 2px 2px 10px #959595;
     opacity: 1.0;
 }
-/* MAY NEED TO DO AN ONMOUSEOVER EVENT OR SOMETHIGN */
-.dropitems:hover ~ .dropbutton {
-    background-color: #82c6ff;
-}
-.dropitems a:hover {
-	color: #656565;
-}
-#dropdown:hover .dropbutton a {
-	color: #fff;
-}
-nav .dropbutton {
-    background-color: none;
-    border-bottom: solid 3px #efefef;
-    transition: background-color 0.1s, border-bottom 0.1s;
-}
-nav .dropbutton:hover {
-    background-color: #82c6ff;
-    color: #fff;
-}
 /*  SEARCH BAR          */
 ._contain { /* Also applies to the hamburger */
     width: 20px;
@@ -198,33 +172,6 @@ nav .dropbutton:hover {
     font-size: 1.2em;
     color: #656565;
 }
-
-/*  BREADCRUMBS         */
-#breadcrumb {
-    background-color: rgba(130, 198, 255, 0.9);
-    padding: 0.5em;
-}
-#breadcrumb li {
-    display: inline-block;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-    color: #fff;
-}
-#breadcrumb .current {
-    font-family: "Montserrat Med";
-}
-#breadcrumb .statelink {
-    font-family: "Montserrat Med";
-    color: #fff;
-}
-#breadcrumb li a {
-    color: #fff;
-    text-decoration: none;
-}
-#breadcrumb li a:hover {
-    color: #4d9fd0;
-}
-
 /* /* /* /* /* /* /* /* /* /* /* /*
 /*         MEDIA QUERIES         /*
 /* /* /* /* /* /* /* /* /* /* /* *//*
