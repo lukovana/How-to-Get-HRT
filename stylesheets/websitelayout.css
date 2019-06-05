@@ -1,0 +1,39 @@
+body {
+    display: grid;
+    grid-template-areas:
+        "headernav"
+        "breadcrumb"
+        "main"
+        "footer";
+}
+#h_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 8vh;
+}
+#headernav {
+	width: 100%;
+    display: grid;
+    grid-template-areas: "header nav buttons";
+    align-items: center;
+    justify-content: stretch;
+}
+#_containerbuttons {
+    display: grid;
+    grid-template-areas: "hamburger search";
+}
+header {
+    display: flex;
+    align-items: center;
+}
+
+#h_wrapper {grid-area: headernav;}
+#breadcrumb {grid-area: breadcrumb;}
+main {grid-area: main;}
+footer {grid-area: footer;} 
+header {grid-area: header;}
+nav {grid-area: nav;}
+#_containerbuttons {grid-area: buttons;}
+#searchimg {grid-area: search;}
+#_hamburger {grid-area: hamburger;}
