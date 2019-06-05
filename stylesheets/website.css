@@ -35,10 +35,12 @@ body {
 }
 #h_wrapper {
     display: flex;
+    flex-wrap: wrap;
     overflow: hidden;
     height: 8vh;
 }
 #headernav {
+	width: 100%;
     display: grid;
     grid-template-areas: "header nav buttons";
     align-items: center;
@@ -47,7 +49,7 @@ body {
 #_containerbuttons {
     display: grid;
     grid-template-areas: "hamburger search";
-}
+}*/
 
 #h_wrapper {grid-area: headernav;}
 #breadcrumb {grid-area: breadcrumb;}
@@ -175,6 +177,9 @@ nav a:hover, nav #dropdown a:hover {
 #searchbox {
     display: none; /*delete evventualy*/
 }
+#_searchimg {
+	width: 100%;
+}
 #headernav form {
 	width: 20px;
 }
@@ -195,6 +200,9 @@ nav a:hover, nav #dropdown a:hover {
         grid-template-areas: 
             "header hamburger search"
             "nav nav nav";
+    }
+    header {
+        width: 50%;
     }
     #logo {
         width: 80px;
