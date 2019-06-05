@@ -61,7 +61,7 @@ function nav($back, $back2, $back3) {
 
     # everything before the loop starts
     echo 
-    '<nav><ul>
+    '<nav id="navdropdown"><ul>
         <div id="dropdown">
             <a href="', $back2, 'states.php"><li class="dropbutton mobiledropitem">States</li></a>
             <div class="dropitems">
