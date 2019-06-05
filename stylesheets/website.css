@@ -191,13 +191,26 @@ nav a:hover, nav #dropdown a:hover {
 #breadcrumb li {
     display: inline-block;
     color: #fff;
+    padding: 0 0.2em;
 }
 #breadcrumb .current {
     font-family: "Montserrat Med";
+    border-bottom: solid 2px white;
+}
+#breadcrumb .current:hover {
+	color: #4d9fd0;
+    border-bottom: solid 2px #4d9fd0;
 }
 #breadcrumb .statelink {
     font-family: "Montserrat Med";
-    color: #fff;
+    color: #82c6ff;
+    background-color: #fff;
+    padding: 0 1em;
+    border-radius: 50px;
+}
+#breadcrumb .statelink:hover {
+	background-color: #ffa4d9;
+	color: #fff;
 }
 #breadcrumb li a {
     color: #fff;
