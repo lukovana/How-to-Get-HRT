@@ -203,7 +203,8 @@ nav a:hover, nav #dropdown a:hover {
     	margin-left: 5em;
     }
     nav {
-    	background-color: #dedede;
+        background-color: #dedede;
+        margin: -1.5em 0;
     }
     nav ul {
     	text-align: center;
