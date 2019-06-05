@@ -15,7 +15,7 @@
         <link rel="icon" href="http://example.com/favicon.ico">
         <link rel="stylesheet" href="stylesheets/website.css"> 
         
-        <script src="scripts/mobiledrop.js"></script>
+        <script src="scripts/website.js"></script>
 
     </head>
     <body>

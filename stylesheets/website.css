@@ -217,15 +217,18 @@ nav a:hover, nav #dropdown a:hover {
         overflow-x: hidden;
     }
 	#h_wrapper {
-		height: 37vh;
-		margin: 0;
+        margin: 0;
+        height: 12vh;
 	}
 	#headernav {
 		grid-template-columns: 30%;
 	}
 	header span {
 		display: none;
-	}
+    }
+    nav {
+        display: none;
+    }
 	nav li:not(.dropbutton) {
 		display: block;
 		border-bottom: solid 1px #656565;
