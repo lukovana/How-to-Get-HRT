@@ -25,7 +25,7 @@
 }
 
 /*  DEFAULT LAYOUT      */
-/*body {
+body {
     display: grid;
     grid-template-areas:
         "headernav"
@@ -48,7 +48,7 @@
 #_containerbuttons {
     display: grid;
     grid-template-areas: "hamburger search";
-}*/
+}
 
 #h_wrapper {grid-area: headernav;}
 #breadcrumb {grid-area: breadcrumb;}
@@ -184,7 +184,7 @@ nav a:hover, nav #dropdown a:hover {
 }
 /* /* /* /* /* /* /* /* /* /* /* /*
 /*         MEDIA QUERIES         /*
-/* /* /* /* /* /* /* /* /* /* /* 
+/* /* /* /* /* /* /* /* /* /* /* */
 @media only screen and (max-width: 540px) {
     html, body {
         overflow-x: hidden;
