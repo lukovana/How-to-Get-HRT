@@ -54,7 +54,7 @@ $states = array(
             );
 $stateslength = count($states);
 
-function nav($back, $back2, $back3) {
+function nav($back, $back2) {
 
     global $states;
     global $stateslength;
