@@ -12,9 +12,9 @@
     </head>
     <body>
         <div id="headernav">
-            <?php include '../../../scripts/header.php'; headerfn('../../../')?>
-            <?php include '../../../scripts/nav.php'; nav('../../states/', '../../')?>
-            <?php include '../../../scripts/search.php'; search('../../../')?>
+            <?php include '../../../templates/header.php'; headerfn('../../../')?>
+            <?php include '../../../templates/nav.php'; nav('../../states/', '../../')?>
+            <?php include '../../../templates/search.php'; search('../../../')?>
 		</div>
 		<!--<main>
 			
@@ -36,7 +36,7 @@
 			</section>
 		</main>-->
         <main>
-			<?php include '../../../scripts/breadcrumbs.php'; thirdtier('California', 'Psychologists');?>
+			<?php include '../../../templates/breadcrumbs.php'; thirdtier('California', 'Psychologists');?>
 			
 			<h2>Lets find a good psychologist for you!</h2>
 
@@ -73,6 +73,6 @@
 				?>
 			</section>
 		</main>
-		<?php include '../../../scripts/footer.html';?>
+		<?php include '../../../templates/footer.php';?>
     </body>
 </html>

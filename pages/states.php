@@ -13,15 +13,15 @@
     </head>
     <body>
         <div id="headernav">
-            <?php include '../scripts/header.php'; headerfn('../')?>
-            <?php include '../scripts/nav.php'; nav('states/', '')?>
-            <?php include '../scripts/search.php'; search('../')?>
+            <?php include '../templates/header.php'; headerfn('../')?>
+            <?php include '../templates/nav.php'; nav('states/', '')?>
+            <?php include '../templates/search.php'; search('../')?>
         </div>
 
         <main>
-            <?php include '../scripts/breadcrumbs.php'; secondtier('../', 'States');?>
+            <?php include '../templates/breadcrumbs.php'; secondtier('../', 'States');?>
             <?php statepage('states/');?>
         </main>
-        <?php include '../scripts/footer.html';?>
+        <?php include '../templates/footer.php';?>
     </body>
 </html>

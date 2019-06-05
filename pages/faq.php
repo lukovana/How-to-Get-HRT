@@ -16,13 +16,13 @@
     </head>
     <body>
         <div id="headernav">
-            <?php include '../scripts/header.php'; headerfn('../')?>
-            <?php include '../scripts/nav.php'; nav('states/', '')?>
-            <?php include '../scripts/search.php'; search('../')?>
+            <?php include '../templates/header.php'; headerfn('../')?>
+            <?php include '../templates/nav.php'; nav('states/', '')?>
+            <?php include '../templates/search.php'; search('../')?>
         </div>
         
         <main>
-            <?php include '../scripts/breadcrumbs.php'; secondtier('../', 'FAQ');?>
+            <?php include '../templates/breadcrumbs.php'; secondtier('../', 'FAQ');?>
             <h2>FAQ</h2>
             <ol>
                 <li>Coffee</li>
@@ -32,6 +32,6 @@
 
             Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
         </main>
-        <?php include '../scripts/footer.html';?>
+        <?php include '../templates/footer.php';?>
     </body>
 </html>
