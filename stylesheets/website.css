@@ -195,11 +195,6 @@ nav a:hover, nav #dropdown a:hover {
 }
 #breadcrumb .current {
     font-family: "Montserrat Med";
-    border-bottom: solid 2px white;
-}
-#breadcrumb .current:hover {
-	color: #4d9fd0;
-    border-bottom: solid 2px #4d9fd0;
 }
 #breadcrumb .statelink {
     font-family: "Montserrat Med";
@@ -212,8 +207,14 @@ nav a:hover, nav #dropdown a:hover {
 	background-color: #ffa4d9;
 	color: #fff;
 }
+#breadcrumb li a:not(.current) {
+	border-bottom: solid 2px white;
+}
+#breadcrumb li a:not(.current):hover {
+	border-bottom: solid 2px #4d9fd0;
+}
 #breadcrumb li a {
-    color: #fff;
+	color: #fff;
     text-decoration: none;
 }
 #breadcrumb li a:hover {
