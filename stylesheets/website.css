@@ -7,6 +7,9 @@
     gray        = #656565;
     dark gray   = #454545;
 
+    This stylesheet PRIMARILY encompasses the layouts for the navigation/header
+    and footer, as well as the media queries for those elements.
+
 */
 /*  FONTS           */
 @font-face {
