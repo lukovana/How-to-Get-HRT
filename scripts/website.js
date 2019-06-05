@@ -15,6 +15,7 @@ var add = (function () {
             headnav.style.height = "37vh";
         } else {
             navigation.style.display = "none";
+            headnav.style.height = "12vh";
         }
 
         document.getElementById("front").innerHTML = add();
