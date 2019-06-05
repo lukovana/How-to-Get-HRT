@@ -23,6 +23,44 @@
     font-family: "Montserrat Med";
     src: url("../assets/fonts/Montserrat/Montserrat-Medium.ttf");
 }
+
+/*  DEFAULT LAYOUT      */
+body {
+    display: grid;
+    grid-template-areas:
+        "headernav"
+        "breadcrumb"
+        "main"
+        "footer";
+}
+#h_wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    height: 8vh;
+}
+#headernav {
+	width: 100%;
+    display: grid;
+    grid-template-areas: "header nav buttons";
+    align-items: center;
+    justify-content: stretch;
+}
+#_containerbuttons {
+    display: grid;
+    grid-template-areas: "hamburger search";
+}*/
+
+#h_wrapper {grid-area: headernav;}
+#breadcrumb {grid-area: breadcrumb;}
+main {grid-area: main;}
+footer {grid-area: footer;} 
+header {grid-area: header;}
+nav {grid-area: nav;}
+#_containerbuttons {grid-area: buttons;}
+#searchimg {grid-area: search;}
+#_hamburger {grid-area: hamburger;}
+
 /*  GENERAL STYLES         */
 html {
     height: 100vh;
@@ -46,7 +84,12 @@ footer {
 }
 /*  NAVIGATION STYLES       */
 #h_wrapper {
+    height: 10vh;
     background-color: #efefef;
+}
+header {
+    display: flex;
+    align-items: center;
 }
 header img {
     float: left;
@@ -83,7 +126,7 @@ nav a:hover, nav #dropdown a:hover {
 #_hamburger {
 	display: none;
 }
-/*  DROPDOWN STYLES  */       
+/*  DROPDOWN STYLES         */
 .dropitems {
     display: grid;
     grid-template-areas:
@@ -183,6 +226,28 @@ nav a:hover, nav #dropdown a:hover {
     .dropbutton {
     	border-top: solid 0.25px #656565;
     	border-bottom: solid 0.25px #656565;
+    }
+    .dropitems {
+        display: grid;
+        grid-template-areas:
+            "A B C D E F";
+    
+        visibility: hidden;
+        position: absolute;
+        /*margin-left: -10em;*/
+        background-color: rgba(244,240,236,0.0);
+        z-index: 3;
+        
+        padding: 2em;
+        max-height: 20em;
+        min-width: 20em;
+        opacity: 0;
+        transition: opacity 0.5s;
+    }
+    .dropitems {
+        display: none;
+        max-height: 0;
+        min-width: 0;
     }
     #_hamburger {
         display: inline;
