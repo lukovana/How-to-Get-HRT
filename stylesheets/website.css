@@ -229,7 +229,7 @@ nav a:hover, nav #dropdown a:hover {
     nav {
         display: none;
     }
-	nav li:not(.dropbutton) {
+	.mobiledropitem {
 		display: block;
 		border-bottom: solid 1px #656565;
 		padding: 0.5em 0;
