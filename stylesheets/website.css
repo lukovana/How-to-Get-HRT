@@ -218,7 +218,7 @@ nav a:hover, nav #dropdown a:hover {
     }
 	#h_wrapper {
         margin: 0;
-        height: 39vh;
+        height: 12vh;
 	}
 	#headernav {
 		justify-content: stretch;
@@ -237,6 +237,7 @@ nav a:hover, nav #dropdown a:hover {
     	margin-right: auto;
     }
     nav {
+    	display: none;
     	margin: 0 -3em;
     }
 	.mobiledropitem {
@@ -254,7 +255,8 @@ nav a:hover, nav #dropdown a:hover {
 	}
 	/*	HOVERABLES		*/
 	nav a li:hover {
-		background-color: #dadada;
+		background-color: #bebebe;
+		color: #fff;
 	}
 	#dropdown {
 		width: 100% !important;
