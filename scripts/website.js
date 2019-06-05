@@ -16,8 +16,6 @@ function dropdown(){
     } else {
         navigation.style.display = "none";
     }
-
-    document.getElementById("front").innerHTML = add();
 }
 
 function bluebutton(){
