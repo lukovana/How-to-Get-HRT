@@ -186,6 +186,16 @@ nav a:hover, nav #dropdown a:hover {
 /* /* /* /* /* /* /* /* /* /* /* /*
 /*         MEDIA QUERIES         /*
 /* /* /* /* /* /* /* /* /* /* /* */
+@media only screen and (max-width: 1280px) {
+    #headernav {
+        background-color: lightblue;
+    }
+}
+@media only screen and (max-width: 1120px) {
+    #headernav {
+        background-color: limegreen;
+    }
+}
 @media only screen and (max-width: 540px) {
     html, body {
         overflow-x: hidden;
@@ -196,10 +206,10 @@ nav a:hover, nav #dropdown a:hover {
 	}
     #headernav {
     	height: 8vh;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: auto auto;
         grid-template-areas: 
-            "header hamburger search"
-            "nav nav nav";
+            "header buttons"
+            "nav    nav ";
     }
     header {
         width: 50%;
