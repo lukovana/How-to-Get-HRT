@@ -61,14 +61,7 @@ function nav($back, $back2, $back3) {
 
     # everything before the loop starts
     echo 
-    '
-    <div class="_contain" id="_hamburger">
-        <a href="#" onclick="dropdown()">
-        <img src="', $back3,'assets/images/hamburger.svg" width="20" height="20" alt="hamburger" id="hamburger"/>
-        </a>
-    </div>
-
-    <nav><ul>
+    '<nav><ul>
         <div id="dropdown">
             <a href="', $back2, 'states.php"><li class="dropbutton mobiledropitem">States</li></a>
             <div class="dropitems">
