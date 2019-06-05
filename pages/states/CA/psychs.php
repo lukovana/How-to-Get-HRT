@@ -6,7 +6,8 @@
 		
         <title>How to Get HRT</title>
 
-        <link rel="stylesheet" href="../../../stylesheets/website.css">
+        <link rel="stylesheet" href="../../../stylesheets/website.css"> 
+        <script src="../../../scripts/website.js"></script>
         <link rel="stylesheet" href="../../../stylesheets/doc.css">
     </head>
     <body>

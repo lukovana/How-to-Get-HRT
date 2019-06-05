@@ -111,6 +111,7 @@ nav li, nav #dropdown {
 nav a, nav #dropdown a {
 	color: #656565;
 	text-decoration: none;
+	transition: color 0.5s, border-bottom-color 0.5s;
 }
 nav a:hover, nav #dropdown a:hover {
 	color: #82c6ff;
@@ -182,6 +183,29 @@ nav a:hover, nav #dropdown a:hover {
 #headernav form {
 	width: 20px;
 }
+/*  BREADCRUMBS         */
+#breadcrumb {
+    background-color: rgba(130, 198, 255, 0.9);
+    padding: 0.5em;
+}
+#breadcrumb li {
+    display: inline-block;
+    color: #fff;
+}
+#breadcrumb .current {
+    font-family: "Montserrat Med";
+}
+#breadcrumb .statelink {
+    font-family: "Montserrat Med";
+    color: #fff;
+}
+#breadcrumb li a {
+    color: #fff;
+    text-decoration: none;
+}
+#breadcrumb li a:hover {
+    color: #4d9fd0;
+}
 /* /* /* /* /* /* /* /* /* /* /* /*
 /*         MEDIA QUERIES         /*
 /* /* /* /* /* /* /* /* /* /* /* */
@@ -204,6 +228,7 @@ nav a:hover, nav #dropdown a:hover {
     }
     nav {
     	background-color: #ffa4d9;
+    	margin: -1.5em 0;
     }
     nav ul {
     	text-align: center;
