@@ -12,10 +12,9 @@ var add = (function () {
 
         if (add() % 2 == 0) {
             navigation.style.display = "block";
-            headnav.style.height = "37vh";
+            headnav.style.height = "40vh";
         } else {
             navigation.style.display = "none";
-            headnav.style.height = "12vh";
         }
 
         document.getElementById("front").innerHTML = add();
