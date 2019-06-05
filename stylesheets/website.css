@@ -33,7 +33,7 @@ body {
         "main"
         "footer";
 }
-#h_wrapper {
+/*#h_wrapper {
     display: flex;
     overflow: hidden;
     height: 8vh;
@@ -48,7 +48,7 @@ body {
 #_containerbuttons {
     display: grid;
     grid-template-areas: "hamburger search";
-}
+}*/
 
 #h_wrapper {grid-area: headernav;}
 #breadcrumb {grid-area: breadcrumb;}
