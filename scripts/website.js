@@ -18,6 +18,7 @@ function dropdown(){
             headnav.style.height = "40vh";
         } else {
             navigation.style.display = "none";
+            headnav.style.height = "12vh";
         }
     }
 }
