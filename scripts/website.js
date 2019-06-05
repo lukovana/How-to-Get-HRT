@@ -15,7 +15,7 @@ function dropdown(){
     {
         if (add() % 2 == 0) {
             navigation.style.display = "block";
-            headnav.style.height = "28vh";
+            headnav.style.height = "46vh";
         } else {
             navigation.style.display = "none";
             headnav.style.height = "12vh";
