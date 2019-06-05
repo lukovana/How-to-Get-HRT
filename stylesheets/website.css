@@ -181,9 +181,9 @@ nav a:hover, nav #dropdown a:hover {
 /*         MEDIA QUERIES         /*
 /* /* /* /* /* /* /* /* /* /* /* */
 @media only screen and (max-width: 540px) {
-	main {
-		visibility: hidden;
-	}
+    html, body {
+        overflow-x: hidden;
+    }
 	#h_wrapper {
 		height: 31vh;
 		margin: 0;
