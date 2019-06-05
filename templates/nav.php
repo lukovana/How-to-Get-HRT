@@ -63,8 +63,8 @@ function nav($back, $back2, $back3) {
     echo 
     '<nav id="navdropdown"><ul>
         <div id="dropdown">
-            <a href="', $back2, 'states.php"><li class="dropbutton mobiledropitem">States</li></a>
-            <div class="dropitems">
+            <a href="', $back2, 'states.php"><li id="dropbutton" class="mobiledropitem">States</li></a>
+            <div class="dropitems" onmouseover="bluebutton()">
                 <div class="states">';
 
                     # loop start: 0-49

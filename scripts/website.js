@@ -5,17 +5,21 @@ var add = (function () {
     }
 })();
 
-    function dropdown(){
-        const navigation = document.getElementById("navdropdown");
-        const headnav = document.getElementById("h_wrapper");
-        add();
+function dropdown(){
+    const navigation = document.getElementById("navdropdown");
+    const headnav = document.getElementById("h_wrapper");
+    add();
 
-        if (add() % 2 == 0) {
-            navigation.style.display = "block";
-            headnav.style.height = "40vh";
-        } else {
-            navigation.style.display = "none";
-        }
-
-        document.getElementById("front").innerHTML = add();
+    if (add() % 2 == 0) {
+        navigation.style.display = "block";
+        headnav.style.height = "40vh";
+    } else {
+        navigation.style.display = "none";
     }
+
+    document.getElementById("front").innerHTML = add();
+}
+
+function bluebutton(){
+    const dropbutton = document.getElementById("dropbutton");
+}

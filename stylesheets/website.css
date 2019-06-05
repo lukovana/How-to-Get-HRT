@@ -237,7 +237,7 @@ nav a:hover, nav #dropdown a:hover {
 	nav ul {
 		margin: 0 0 0 -4.5em;
 	}
-	.dropbutton {
+	#dropbutton {
 		border-bottom: solid 1px #656565;
 		border-top: solid 1px #656565;
 		padding: 0.5em 11em;
