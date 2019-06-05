@@ -11,11 +11,13 @@
         <link rel="stylesheet" href="../../../stylesheets/doc.css">
     </head>
     <body>
-        <div id="headernav">
-            <?php include '../../../templates/header.php'; headerfn('../../../')?>
-            <?php include '../../../templates/nav.php'; nav('../../states/', '../../')?>
-            <?php include '../../../templates/search.php'; search('../../../')?>
-		</div>
+		<div class="wrapper" id="h_wrapper">
+            <div id="headernav">
+                <?php include '../../../templates/header.php'; headerfn('../../../')?>
+                <?php include '../../../templates/nav.php'; nav('../../states/', '../../')?>
+                <?php include '../../../templates/search.php'; search('../../../')?>
+            </div>
+        </div>
 		<!--<main>
 			
 			<section class="section for the forms">
