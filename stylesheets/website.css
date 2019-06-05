@@ -37,7 +37,6 @@ body {
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    height: 8vh;
 }
 #headernav {
 	width: 100%;
@@ -84,7 +83,7 @@ footer {
 }
 /*  NAVIGATION STYLES       */
 #h_wrapper {
-    height: 10vh;
+    height: 12vh;
     background-color: #efefef;
 }
 header {
@@ -186,57 +185,62 @@ nav a:hover, nav #dropdown a:hover {
 /* /* /* /* /* /* /* /* /* /* /* /*
 /*         MEDIA QUERIES         /*
 /* /* /* /* /* /* /* /* /* /* /* */
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 1024px) {
     #headernav {
-        background-color: lightblue;
+    	width: 100%;
+    	grid-template-columns: auto;
+        grid-template-areas: 
+        "header buttons"
+        "nav 	nav";
+    }
+    #h_wrapper {
+    	height: 21vh;
+    }
+    header {
+    	margin-left: auto;
+    }
+    #_containerbuttons {
+    	margin-left: 5em;
+    }
+    nav {
+    	background-color: #dedede;
+    }
+    nav ul {
+    	text-align: center;
+    }
+    nav li {
+    	padding: 0 1em;
     }
 }
-@media only screen and (max-width: 1120px) {
-    #headernav {
-        background-color: limegreen;
-    }
-}
-@media only screen and (max-width: 540px) {
+@media only screen and (max-width: 600px) {
     html, body {
         overflow-x: hidden;
     }
 	#h_wrapper {
-		height: 31vh;
+		height: 37vh;
 		margin: 0;
 	}
-    #headernav {
-    	height: 8vh;
-        grid-template-columns: auto auto;
-        grid-template-areas: 
-            "header buttons"
-            "nav    nav ";
-    }
-    header {
-        width: 50%;
-    }
-    #logo {
-        width: 80px;
-    }
-    header span {display: none;}
-    nav {
-    	margin-left: -8vw;
-    }
-    ul {
-    	margin-left: 0;
-    	height: 20vh;
-    }
-    nav a li {
-    	display: block;
-    	padding: 0.5em 1em;
-    }
-    nav a li:not(.dropbutton) {
-    	border-top: solid 0.25px #656565;
-    	border-bottom: solid 0.25px #656565;
-    }
-    .dropbutton {
-    	border-top: solid 0.25px #656565;
-    	border-bottom: solid 0.25px #656565;
-    }
+	#headernav {
+		grid-template-columns: 30%;
+	}
+	header span {
+		display: none;
+	}
+	nav li:not(.dropbutton) {
+		display: block;
+		border-bottom: solid 1px #656565;
+		padding: 0.5em 0;
+	}
+	nav ul {
+		margin-left: -2.4em;
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.dropbutton {
+		border-bottom: solid 1px #656565;
+		border-top: solid 1px #656565;
+		padding: 0.5em 11em;
+	}
     .dropitems {
         display: grid;
         grid-template-areas:
