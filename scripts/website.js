@@ -22,4 +22,6 @@ function dropdown(){
 
 function bluebutton(){
     const dropbutton = document.getElementById("dropbutton");
+    dropbutton.style.backgroundColor = "#82c6ff;";
+    dropbutton.style.color = "#fff;";
 }
