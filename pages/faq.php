@@ -23,17 +23,21 @@
                 <?php include '../templates/search.php'; search('../')?>
             </div>
         </div>
-        
+        <?php include '../templates/breadcrumbs.php'; secondtier('../', 'FAQ');?>
         <main>
-            <?php include '../templates/breadcrumbs.php'; secondtier('../', 'FAQ');?>
-            <h2>FAQ</h2>
-            <ol>
-                <li>Coffee</li>
-                <li>Tea</li>
-                <li>Milk</li>
-            </ol>
+            <h1>Frequently Asked Questions</h1>
+            <section id="s_one">
+                <h2>Random List</h2>
+                <ol>
+                    <li>Coffee</li>
+                    <li>Tea</li>
+                    <li>Milk</li>
+                </ol>
+            </section>
 
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <section id="s_two">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </section>
         </main>
         <?php include '../templates/footer.php';?>
     </body>

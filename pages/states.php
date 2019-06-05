@@ -20,9 +20,9 @@
                 <?php include '../templates/search.php'; search('../')?>
             </div>
         </div>
-
+        <?php include '../templates/breadcrumbs.php'; secondtier('../', 'States');?>
         <main>
-            <?php include '../templates/breadcrumbs.php'; secondtier('../', 'States');?>
+            <h1>List of States</h1>
             <?php statepage('states/');?>
         </main>
         <?php include '../templates/footer.php';?>
