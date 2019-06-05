@@ -15,6 +15,11 @@
         <link rel="icon" href="http://example.com/favicon.ico">
         <!--<link rel="stylesheet" href="stylesheets/website.css">-->
 
+        <style>
+            html, body {
+                overflow-x: hidden;
+            }
+        </style>
         <script src="scripts/mobiledrop.js"></script>
 
     </head>
