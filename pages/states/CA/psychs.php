@@ -24,6 +24,11 @@
                 <h3>Lets get the ball rolling!</h3> <br>
                 <p>Select Your County!</p>
 
+				<!-- Enters psychologist information from the database -->
+				<?php 	include '../scripts/database.php';
+						include '../scripts/enterData.php';
+				?>
+
 				<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
 					
 					<?php 	include 'data_assets/counties.html';
@@ -35,11 +40,6 @@
 					<button type="Submit">Submit</button>
 				</form>
 				</section>
-				
-				<!-- Enters psychologist information from the database -->
-				<?php 	include '../scripts/database.php';
-						include '../scripts/enterData.php';
-				?>
 
 				<!-- Processing the data posted from the form -->
 				<?php 	$county = $_POST['county']; 
