@@ -12,7 +12,7 @@
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $county = test_input($_POST["county"]);
-        $name = test_input($_POST["name"])
+        $name = test_input($_POST["name"]);
     }
 
 ?>
