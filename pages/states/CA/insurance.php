@@ -15,9 +15,8 @@
             <?php include '../../../scripts/nav.php'; nav('../../states/', '../../')?>
             <?php include '../../../scripts/search.php'; search('../../../')?>
         </div>
-
+        <?php include '../../../scripts/breadcrumbs.php'; thirdtier('California', 'Getting Insurance');?>
         <main>
-            <?php include '../../../scripts/breadcrumbs.php'; thirdtier('California', 'Getting Insurance');?>
             <section class="state">
                 <h2>How To Get Insurance in California</h2>
                 

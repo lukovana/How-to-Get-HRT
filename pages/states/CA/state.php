@@ -6,23 +6,17 @@
         
         <title>How to Get HRT</title>
 
-        <link rel="stylesheet" href="../../../stylesheets/website.css"> 
         <link rel="stylesheet" href="../../../stylesheets/main.css">
-        <script src="../../../scripts/website.js"></script>
         <link rel="stylesheet" href="../../../stylesheets/states.css">
     </head>
     <body>
-
-        <div class="wrapper" id="h_wrapper">
-            <div id="headernav">
-                <?php include '../../../templates/header.php'; headerfn('../../../')?>
-                <?php include '../../../templates/nav.php'; nav('../../states/', '../../')?>
-                <?php include '../../../templates/search.php'; search('../../../')?>
-            </div>
+        <div id="headernav">
+            <?php include '../../../scripts/header.php'; headerfn('../../../')?>
+            <?php include '../../../scripts/nav.php'; nav('../../states/', '../../')?>
+            <?php include '../../../scripts/search.php'; search('../../../')?>
         </div>
-
+        <?php include '../../../scripts/breadcrumbs.php'; statetier('California');?>
         <main>
-            <?php include '../../../templates/breadcrumbs.php'; statetier('California');?>
             <section class="state">
                 <h2>California</h2>
                 <p>The Golden State</p>
@@ -60,6 +54,6 @@
                 </a>
             </section>
         </main>
-        <?php include '../../../templates/footer.php';?>
+        <?php include '../../../scripts/footer.html';?>
     </body>
 </html>

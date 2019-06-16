@@ -6,7 +6,7 @@
         
         <title>How to Get HRT</title>
 
-        <link rel="stylesheet" href="../../../stylesheets/website.css">
+        <link rel="stylesheet" href="../../../stylesheets/main.css">
         <link rel="stylesheet" href="../../../stylesheets/howtoget.css">
     </head>
     <body>
@@ -15,9 +15,8 @@
             <?php include '../../../scripts/nav.php'; nav('../../states/', '../../')?>
             <?php include '../../../scripts/search.php'; search('../../../')?>
         </div>
-
+        <?php include '../../../scripts/breadcrumbs.php'; thirdtier('California', 'Getting Hormones');?>
         <main>
-            <?php include '../../../scripts/breadcrumbs.php'; thirdtier('California', 'Getting Hormones');?>
             <section class="state">
                 <h2>How To Get Hormones in California</h2>
                 
