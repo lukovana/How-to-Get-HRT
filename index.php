@@ -14,7 +14,7 @@
         
         <link rel="icon" href="http://example.com/favicon.ico">
         <link rel="stylesheet" href="stylesheets/website.css"> 
-        <link rel="stylesheet" href="stylesheets/main.css">
+        <link rel="stylesheet" href="stylesheets/style.css">
         
         <script src="scripts/website.js"></script>
 
