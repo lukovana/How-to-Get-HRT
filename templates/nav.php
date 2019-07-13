@@ -86,8 +86,8 @@ function nav($back, $back2) {
             <a href="', $back2, 'about.php"><li class="mobiledropitem">About Us</li></a>
         </ul>
     </nav>';
-};
-/*
+}
+
 function statepage($back) {
     global $states;
     global $stateslength;
@@ -101,8 +101,7 @@ function statepage($back) {
             echo    '</div><div>';
             }
         };
-    echo '</div>'
+    echo '</div>';
 
 }
-*/
 ?>

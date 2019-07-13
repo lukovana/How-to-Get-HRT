@@ -122,9 +122,9 @@ nav a:hover, nav #dropdown a:hover {
 }
 #dropdown .dropitems a {
 	color: #fff;
-	padding: 8px 2px 8px 5px;
-	width: 150px;
-	margin: 2px;
+	padding: 1em 0.2em 1em 1em;
+	width: 140px;
+	margin: 0.2em;
 	transition: background-color, 0.4s;
 }
 #dropdown .dropitems a:hover {
