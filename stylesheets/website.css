@@ -122,9 +122,16 @@ nav a:hover, nav #dropdown a:hover {
 }
 #dropdown .dropitems a {
 	color: #fff;
+	padding: 8px 2px 8px 5px;
+	width: 150px;
+	margin: 2px;
+	transition: background-color, 0.4s;
 }
 #dropdown .dropitems a:hover {
-	color: #656565;
+	color: #fff;
+	background-color: #ffa4d9;
+	border-radius: 50px;
+	border-bottom: none;
 }
 #_hamburger {
 	display: none;
@@ -209,12 +216,6 @@ nav a:hover, nav #dropdown a:hover {
 #breadcrumb .statelink:hover {
 	background-color: #ffa4d9;
 	color: #fff;
-}
-#breadcrumb li a:not(.current) {
-	border-bottom: solid 2px white;
-}
-#breadcrumb li a:not(.current):hover {
-	border-bottom: solid 2px #4d9fd0;
 }
 #breadcrumb li a {
 	color: #fff;

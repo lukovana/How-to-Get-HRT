@@ -7,7 +7,7 @@
         <title>How to Get HRT</title>
 
         <link rel="stylesheet" href="../stylesheets/website.css"> 
-        <link rel="stylesheet" href="../stylesheets/style.css">
+        <link rel="stylesheet" href="../stylesheets/main.css">
         <script src="../scripts/website.js"></script>
         <link rel="stylesheet" href="../stylesheets/states.css">
         
@@ -23,7 +23,7 @@
         <?php include '../templates/breadcrumbs.php'; secondtier('../', 'States');?>
         <main>
             <h1>List of States</h1>
-            <?php   include '../templates/nav.php'; 
+            <?php   include '../templates/nav.php';
                     statepage('states/');?>
         </main>
         <?php include '../templates/footer.php';?>
