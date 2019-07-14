@@ -47,6 +47,11 @@
 				<h3>Lets get the ball rolling!</h3>
 				<p>Select Your County!</p>
 
+				<!-- Enters psychologist information from the database -->
+				<?php 	include '../scripts/database.php';
+						include 'scripts/enter_data.php';
+				?>
+
 				<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="form1">
 					
 					<?php 	include 'scripts/counties_select.php';
@@ -67,12 +72,7 @@
 						'<form method="POST" action="process.php" id="form2">';
 						include 'scripts/insurances_select.php';
 						getInsuranceList('California', $county);
-						echo '</form>';
-				?>
-
-				<!-- Enters psychologist information from the database -->
-				<?php 	include '../scripts/database.php';
-						include 'scripts/enter_data.php';
+						echo '<button type="Submit">Submit</button></form>';
 				?>
 			</section>
 		</main>
