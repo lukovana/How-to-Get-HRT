@@ -23,8 +23,7 @@
         <?php include '../templates/breadcrumbs.php'; secondtier('../', 'States');?>
         <main>
             <h1>ssstates</h1>
-            <?php   include '../templates/nav.php';
-                    statepage('states/');?>
+            <?php include '../templates/nav.php'; statepage('states/');?>
         </main>
         <?php include '../templates/footer.php';?>
     </body>
