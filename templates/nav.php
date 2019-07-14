@@ -95,7 +95,7 @@ function statepage($back) {
     echo '<div>';
         # loop start: 0-49
         for($i = 0; $i < $stateslength; $i++) {
-        echo    '<span"', $back, $states[$i][0], 
+        echo    '<span><a href="', $back, $states[$i][0], 
                 '/state.php">', $states[$i][1], '</span>';
             if ($i == 9 || $i == 19 || $i == 29 || $i == 39 ) {
             echo    '</div><div>';
