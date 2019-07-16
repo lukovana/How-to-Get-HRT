@@ -3,8 +3,6 @@
 function nav($back, $back2) {
 
     include 'states.php';
-    global $states;
-    global $stateslength;
 
     # everything before the loop starts
     echo 

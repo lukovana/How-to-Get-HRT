@@ -1,5 +1,7 @@
 <?php
 
+global $states;
+global $stateslength;
 $states = array(
             array("AK", "Alaska"),
             array("AL","Alabama"),
@@ -55,8 +57,6 @@ $states = array(
 $stateslength = count($states);
 
 function statepage($back) {
-    global $states;
-    global $stateslength;
 
     echo '<div>';
         # loop start: 0-49
