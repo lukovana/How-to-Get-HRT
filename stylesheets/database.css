@@ -1,0 +1,9 @@
+main {
+    display: grid;
+    grid-template-areas: 
+        "forms"
+        "spit";
+}
+
+#allpsychs {grid-area: 'spit';}
+#allforms {grid-area: 'forms'}
