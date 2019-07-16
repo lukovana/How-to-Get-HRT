@@ -1,16 +1,13 @@
 /* PSYCH PAGE */
-main {
-    display: grid !important;
-    grid-template-areas: 
-        "forms"
-        "spit";
+.formstyles {
+    display: grid;
 }
 
-.formstyles #allpsychs {
-    grid-area: 'spit';
+#allpsychs {
     background-color: lightblue;
+    grid-row: 2;
 }
-.formstyles #allforms {
-    grid-area: 'forms';
+#allforms {
     background-color: lightgreen;
+    grid-row: 1;
 }

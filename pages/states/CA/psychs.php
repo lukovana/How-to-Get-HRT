@@ -54,6 +54,7 @@
 				</section>
 
 				<section id="allforms">
+				
 					<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="form1">
 						
 						<?php 	include 'scripts/counties_select.php';
@@ -76,6 +77,7 @@
 							getInsuranceList('California', $county);
 							echo '<button type="Submit">Submit</button></form>';
 					?>
+
 				</section>
 			</section>
 		</main>
