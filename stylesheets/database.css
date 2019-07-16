@@ -10,4 +10,9 @@
 #allforms {
     background-color: lightgreen;
     grid-row: 1;
+    display: grid;
+    grid-template-areas: 
+        "f1 f2";
 }
+#form1 {grid-area: f1;}
+#form2 {grid-area: f2;}
