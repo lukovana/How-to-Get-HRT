@@ -1,8 +1,8 @@
 <?php
 
-function nav($back, $back2) {
+include 'states.php';
 
-    include '../templates/states.php';
+function nav($back, $back2) {
 
     # everything before the loop starts
     echo 
