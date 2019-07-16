@@ -43,8 +43,6 @@
 			<h2>Lets find a good psychologist for you!</h2>
 
 			<section class="formstyles">
-				<h3>Lets get the ball rolling!</h3>
-				<p>Select Your County!</p>
 
 				<!-- Enters psychologist information from the database -->
 				<section id="allpsychs">
@@ -54,7 +52,10 @@
 				</section>
 
 				<section id="allforms">
-				
+
+					<h3>Lets get the ball rolling!</h3>
+					<p>Select Your County!</p>
+
 					<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="form1">
 						
 						<?php 	include 'scripts/counties_select.php';
