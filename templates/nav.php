@@ -1,11 +1,8 @@
 <?php
 
-include 'states.php';
-$states;
-$stateslength;
-
 function nav($back, $back2) {
 
+    include 'states.php';
     global $states;
     global $stateslength;
 
