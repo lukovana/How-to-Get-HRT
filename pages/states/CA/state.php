@@ -20,9 +20,8 @@
                 <?php include '../../../templates/search.php'; search('../../../')?>
             </div>
         </div>
-
+        <?php include '../../../templates/breadcrumbs.php'; statetier('California');?>
         <main>
-            <?php include '../../../templates/breadcrumbs.php'; statetier('California');?>
             <section class="state">
                 <h2>California</h2>
                 <p>The Golden State</p>

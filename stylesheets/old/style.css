@@ -1,0 +1,292 @@
+/*  COLORS
+    light blue  = #82c6ff = rgba(130, 198, 255, x)
+    pink        = #ffa4d9 = rgba(255, 164, 217, x)
+
+*/
+body {
+    font-family: Montserrat, Helvetica, sans-serif;
+    height: 100vh;
+    display: grid;
+    grid-template-areas:
+        "headernav"
+        "breadcrumb"
+        "main"
+        "footer";
+}
+#headernav {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 33% auto 28%;
+    grid-template-areas: 
+        "header nav search";
+}
+#headernav {grid-area: headernav;}
+header {grid-area: header;}
+nav {grid-area: nav;}
+main {grid-area: main;}
+#search {grid-area: search;}
+footer {grid-area: footer;} 
+#breadcrumb {grid-area: breadcrumb;}
+/*****FONTS******************************/
+@font-face {
+    font-family: Montserrat;
+    src: url("../assets/fonts/Montserrat/Montserrat-Regular.ttf")
+}
+
+@font-face {
+    font-family: "Montserrat Bold";
+    src: url("../assets/fonts/Montserrat/Montserrat-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Montserrat Med";
+    src: url("../assets/fonts/Montserrat/Montserrat-Medium.ttf");
+}
+
+/************ HEADER **************/
+body {overflow-x: hidden;}
+#headernav {
+    background-color: #efefef;
+    height: 12vh;
+    margin: -1em;
+    padding: 1em;
+}
+header {
+    color: #fff;
+}
+header img {
+    float: left;
+}
+#headernav h1 a {
+    text-align: left;
+    font-family: "Montserrat Bold";
+    color: #656565;
+    text-decoration: none;
+}
+/****************************************/
+nav li a {
+    text-decoration: none;
+    color: #656565;
+    padding: 1em;
+}
+nav ul {
+    font-size: 1.2em;
+    font-family: "Montserrat Med";
+    text-transform: uppercase;
+    margin-top: 1.5em;
+}
+nav li {
+    border-radius: 50px;
+}
+nav #dropdown {
+    border-radius: 50px 50px 0 0;
+}
+nav li, nav #dropdown {
+    display: inline-block;
+    transition: background-color 0.5s;
+}
+nav li:hover, nav #dropdown:hover {
+    background-color: #82c6ff;
+}
+nav li a:hover, nav #dropdown .dropbutton a:hover {
+	color: #fff;
+}
+.mobiledropbutton {
+    display: none;
+}
+/***************)DROPDOWNS(***************/
+.dropitems {
+    display: grid;
+    grid-template-areas:
+        "A B C D E F";
+
+	visibility: hidden;
+    position: absolute;
+    margin-left: -10em;
+	background-color: rgba(244,240,236,0.0);
+    z-index: 1;
+    
+    max-height: 20em;
+    min-width: 20em;
+
+    padding: 2em;
+
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.states:first-child {grid-area: A;}
+.states:nth-child(2) {grid-area: B;}
+.states:nth-child(3) {grid-area: C;}
+.states:nth-child(4) {grid-area: D;}
+.states:nth-child(5) {grid-area: E;}
+.states:last-child {grid-area: F;}
+
+.dropitems a {
+	text-decoration: none;
+	color: #fff;
+    display: block;
+    padding: 1em 1em 0 1em;
+    font-size: 0.7em;
+}
+#dropdown:hover .dropitems {
+	visibility: visible;
+	background-color: #82c6ff;
+    color: #fff;
+    box-shadow: 2px 2px 10px #959595;
+    opacity: 1.0;
+}
+.dropitems a:hover {
+	color: #656565;
+}
+#dropdown:hover .dropbutton a {
+	color: #fff;
+}
+/*********SEARCH***************/
+#search {
+    margin-top: 1.8em;
+}
+#search input {
+    background-color: #fff;
+    border: none;
+    font-family: Montserrat;
+    padding-left: 1em;
+    border-radius: 50px;
+    font-size: 1.2em;
+    color: #656565;
+    width: 15em;
+}
+#search img {
+    /* WIP: it is not aligning >.< */
+    vertical-align: middle;
+}
+/*******BREADCRUMBS***********/
+#breadcrumb {
+    background-color: rgba(130, 198, 255, 0.9);
+    margin: -2em -2em 0 -2em;
+    padding: 0.5em;
+    
+}
+#breadcrumb li {
+    display: inline-block;
+    margin-left: 0.2em;
+    margin-right: 0.2em;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    color: #fff;
+}
+#breadcrumb .current {
+    font-family: "Montserrat Med";
+}
+#breadcrumb .statelink {
+    font-family: "Montserrat Med";
+    color: #fff;
+}
+#breadcrumb li a {
+    color: #fff;
+    text-decoration: none;
+}
+#breadcrumb li a:hover {
+    color: #4d9fd0;
+}
+/*******MAIN*************/
+main {
+    background: linear-gradient(to bottom, #ffffff 40%,#dddddd 80%,#aaaaaa 100%);
+    margin: 1em -1em -1em -1em;
+    padding: 2em;
+}
+/*******FOOTER**************/
+footer {
+    height: 15vh;
+    background-color: rgba(130, 198, 255, 0.9);
+    color: #fff;
+    padding: 2em;
+    margin: 1em -1em 0em -1em;
+    width: 100%;
+}
+
+
+/********* MEDIA QUERIES **********/
+@media only screen and (max-width: 1280px) {
+    #headernav {
+        grid-template-columns: 33% auto 20%;
+    }
+    #search input {width: 8em;}
+}
+@media only screen and (max-width: 1024px) {
+    #headernav {
+        text-align: center;
+        height: 25vh;
+        grid-template-columns: 50% 50%;
+        grid-template-areas:
+            "header search"
+            "nav    nav";
+    }
+    #search input {width: 80%;}
+    nav ul {text-align: center;}
+    nav li {padding: 0 2em 0 2em;}
+    .dropitems {margin-left: -5em;}
+}
+@media only screen and (max-width: 860px) {
+    #search input {width: 50%;}
+    nav li {padding: 0;}
+    .dropitems {margin-left: -10em;}
+}
+@media only screen and (max-width: 640px) {
+    /*#headernav {
+        height: 10vh;
+        grid-template-columns: auto 20% 20%;
+        grid-template-areas:
+            "header hamburger   search"
+            "nav    nav         nav";
+    }
+    nav {
+        display: grid;
+        grid-template-columns: 50%;
+        grid-template-areas:
+            "link1"
+            "link2"
+            "link3"
+            "link4";
+    }
+    .mobiledropbutton {grid-area: hamburger;}
+    nav #dropdown {grid-area: link1;}
+    nav li:nth-child(3) {grid-area: link2;}
+    nav li:nth-child(4) {grid-area: link3;}
+    nav li:last-child {grid-area: link4;}
+    nav ul {text-align: left;}
+    header h1 {
+        width: 80%;
+    }
+    #search input {display: none;}
+    #search img, .mobiledropbutton img {
+        background-color: rgba(255, 164, 217, 0.9);
+        border-radius: 50%;
+        padding: 1em;
+    }
+    .mobiledropbutton img {
+        margin-left: -15em;
+        margin-top: 1em;
+    }
+    /* WIP: must fix the dropdown. very important */
+    /*nav li, nav #dropdown {
+        display: block;
+        margin: 1em 0 1em 0;
+        background-color: rgba(255, 164, 217, 0.9);
+    }
+    nav li a, nav #dropdown a {
+        //center this bitch
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* getting rid of the dropdown 
+    #dropdown:hover .dropitems {
+        display: none;
+    }
+    .mobiledropbutton {
+        display: inline-block;
+    }
+    .mobiledropdown:not(.mobiledropbutton) {
+        display: none;
+    }*/
+}

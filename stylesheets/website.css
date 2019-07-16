@@ -29,6 +29,7 @@
 
 /*  DEFAULT LAYOUT      */
 body {
+    background-color: red;
     display: grid;
     grid-template-areas:
         "headernav"
@@ -122,9 +123,16 @@ nav a:hover, nav #dropdown a:hover {
 }
 #dropdown .dropitems a {
 	color: #fff;
+	padding: 1em 0.2em 1em 1em;
+	width: 140px;
+	margin: 0.2em;
+	transition: background-color, 0.4s;
 }
 #dropdown .dropitems a:hover {
-	color: #656565;
+	color: #fff;
+	background-color: #ffa4d9;
+	border-radius: 50px;
+	border-bottom: none;
 }
 #_hamburger {
 	display: none;
@@ -209,12 +217,6 @@ nav a:hover, nav #dropdown a:hover {
 #breadcrumb .statelink:hover {
 	background-color: #ffa4d9;
 	color: #fff;
-}
-#breadcrumb li a:not(.current) {
-	border-bottom: solid 2px white;
-}
-#breadcrumb li a:not(.current):hover {
-	border-bottom: solid 2px #4d9fd0;
 }
 #breadcrumb li a {
 	color: #fff;

@@ -15,9 +15,8 @@
             <?php include '../../../scripts/nav.php'; nav('../../states/', '../../')?>
             <?php include '../../../scripts/search.php'; search('../../../')?>
         </div>
-		
+        <?php include '../../../scripts/breadcrumbs.php'; thirdtier('California', 'Getting Surgery');?>
         <main>
-			<?php include '../../../scripts/breadcrumbs.php'; thirdtier('California', 'Getting Surgery');?>
 			<section class="state">
 				<h2>Everything You Need To Know About Surgeries</h2>
 				

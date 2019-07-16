@@ -15,10 +15,8 @@
             <?php include '../../../scripts/nav.php'; nav('../../states/', '../../')?>
             <?php include '../../../scripts/search.php'; search('../../../')?>
         </div>
-
-        <main>
-			<?php include '../../../scripts/breadcrumbs.php'; thirdtier('California', 'Endocrinologists');?>             
-				
+		<?php include '../../../scripts/breadcrumbs.php'; thirdtier('California', 'Endocrinologists');?>    
+        <main>         	
 			<section class="state">
 				<h2>All Of California's LGBTQ+ Friendly Endocrinologists</h2>
 				

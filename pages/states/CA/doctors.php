@@ -15,9 +15,8 @@
             <?php include '../../../scripts/nav.php'; nav('../../states/', '../../')?>
             <?php include '../../../scripts/search.php'; search('../../../')?>
         </div>
-		
+		<?php include '../../../scripts/breadcrumbs.php'; thirdtier('California', 'Doctors');?>
         <main>
-			<?php include '../../../scripts/breadcrumbs.php'; thirdtier('California', 'Doctors');?>
             <section class="state">
                 <h2>All Of California's LGBTQ+ Friendly Doctors</h2>
 				

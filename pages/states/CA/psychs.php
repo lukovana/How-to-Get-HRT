@@ -38,14 +38,19 @@
 					...
 			</section>
 		</main>-->
+		<?php include '../../../templates/breadcrumbs.php'; thirdtier('California', 'Psychologists');?>
         <main>
-			<?php include '../../../templates/breadcrumbs.php'; thirdtier('California', 'Psychologists');?>
 			
 			<h2>Lets find a good psychologist for you!</h2>
 
 			<section class="formstyles">
 				<h3>Lets get the ball rolling!</h3>
 				<p>Select Your County!</p>
+
+				<!-- Enters psychologist information from the database -->
+				<?php 	include '../scripts/database.php';
+						include 'scripts/enter_data.php';
+				?>
 
 				<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="form1">
 					
@@ -67,12 +72,7 @@
 						'<form method="POST" action="process.php" id="form2">';
 						include 'scripts/insurances_select.php';
 						getInsuranceList('California', $county);
-						echo '</form>';
-				?>
-
-				<!-- Enters psychologist information from the database -->
-				<?php 	include '../scripts/database.php';
-						include 'scripts/enter_data.php';
+						echo '<button type="Submit">Submit</button></form>';
 				?>
 			</section>
 		</main>
