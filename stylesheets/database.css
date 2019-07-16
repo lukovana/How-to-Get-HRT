@@ -8,9 +8,9 @@ main {
 
 .formstyles #allpsychs {
     grid-area: 'spit';
-    background-color: purple;
+    background-color: lightblue;
 }
 .formstyles #allforms {
     grid-area: 'forms';
-    background-color: green;
+    background-color: lightgreen;
 }
