@@ -23,10 +23,10 @@
         </div>
         <?php include '../templates/breadcrumbs.php'; secondtier('../', 'States');?>
         <main>
-            <h1>List of States</h1>
+            <h1>its thte states</h1>
             <?php 
             
-            include '../templates/states.php'; statepage('states/');
+            include '../templates/states.php';
 
                 global $states;
                 global $stateslength;
