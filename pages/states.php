@@ -34,7 +34,7 @@
                 echo '<div class="stateset">';
                     # loop start: 0-49
                     for($i = 0; $i < $stateslength; $i++) {
-                    echo    '<span class="statepage"><a href="', $back, $states[$i][0], 
+                    echo    '<span class="statepage"><a href="states/', $states[$i][0], 
                             '/state.php" class="statepagelink">', $states[$i][1], '</span><br><br>'; // please delete these horrible br tags
                         if ($i == 9 || $i == 19 || $i == 29 || $i == 39 ) {
                         echo    '</div><div class="stateset">';
