@@ -1,6 +1,8 @@
 <?php
 
 include 'states.php';
+$states;
+$stateslength;
 
 function nav($back, $back2) {
 
