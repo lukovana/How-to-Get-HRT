@@ -2,6 +2,9 @@
 
 function nav($back, $back2) {
 
+    global $states;
+    global $stateslength;
+
     # everything before the loop starts
     echo 
     '<nav id="navdropdown"><ul>

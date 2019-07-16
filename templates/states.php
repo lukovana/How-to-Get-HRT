@@ -58,6 +58,9 @@ $stateslength = count($states);
 
 function statepage($back) {
 
+    global $states;
+    global $stateslength;
+
     echo '<div>';
         # loop start: 0-49
         for($i = 0; $i < $stateslength; $i++) {
