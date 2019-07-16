@@ -24,7 +24,25 @@
         <?php include '../templates/breadcrumbs.php'; secondtier('../', 'States');?>
         <main>
             <h1>List of States</h1>
-            <?php include '../templates/states.php'; statepage('states/');?>
+            <?php 
+            
+            include '../templates/states.php'; statepage('states/');
+
+                global $states;
+                global $stateslength;
+            
+                echo '<div>';
+                    # loop start: 0-49
+                    for($i = 0; $i < $stateslength; $i++) {
+                    echo    '<span><a href="', $back, $states[$i][0], 
+                            '/state.php">', $states[$i][1], '</span>';
+                        if ($i == 9 || $i == 19 || $i == 29 || $i == 39 ) {
+                        echo    '</div><div>';
+                        }
+                    };
+                echo '</div>';
+            
+            ?>
         </main>
         <?php include '../templates/footer.php';?>
     </body>
