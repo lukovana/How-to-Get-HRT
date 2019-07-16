@@ -29,7 +29,6 @@
 
 /*  DEFAULT LAYOUT      */
 body {
-    background-color: red;
     display: grid;
     grid-template-areas:
         "headernav"

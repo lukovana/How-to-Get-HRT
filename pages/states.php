@@ -22,7 +22,7 @@
         </div>
         <?php include '../templates/breadcrumbs.php'; secondtier('../', 'States');?>
         <main>
-            <h1>ssstates</h1>
+            <h1>List of States</h1>
             <?php include '../templates/nav.php'; statepage('states/');?>
         </main>
         <?php include '../templates/footer.php';?>
