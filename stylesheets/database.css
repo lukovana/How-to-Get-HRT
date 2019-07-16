@@ -2,8 +2,14 @@ main {
     display: grid;
     grid-template-areas: 
         "forms"
-        "spit" !important;
+        "spit";
 }
 
-#allpsychs {grid-area: 'spit';}
-#allforms {grid-area: 'forms'}
+#allpsychs {
+    grid-area: 'spit';
+    background-color: purple;
+}
+#allforms {
+    grid-area: 'forms';
+    background-color: green;
+}
