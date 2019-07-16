@@ -1,0 +1,16 @@
+/* PSYCH PAGE */
+main {
+    display: grid !important;
+    grid-template-areas: 
+        "forms"
+        "spit";
+}
+
+.formstyles #allpsychs {
+    grid-area: 'spit';
+    background-color: purple;
+}
+.formstyles #allforms {
+    grid-area: 'forms';
+    background-color: green;
+}
