@@ -48,31 +48,30 @@
 				<p>Select Your County!</p>
 
 				<!-- Enters psychologist information from the database -->
-				<?php 	include '../scripts/database.php';
-						include 'scripts/enter_data.php';
+				<?php include '../scripts/database.php';
+					  include 'scripts/enter_data.php';
 				?>
+
 
 				<form method="POST" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>" id="form1">
 					
-					<?php 	include 'scripts/counties_select.php';
-							#include '../scripts/formselect.php'
-							#select("county", $counties);
-							#select("insurance", $insurances);?>
+					<?php include 'scripts/counties_select.php';
+						  #include '../scripts/formselect.php'
+						  #select("county", $counties);
+						  #select("insurance", $insurances);?>
 
 					<button type="Submit">Submit</button>
 					
 				</form>
 
-				<?php	include '../scripts/database.php';
-
-						//  Take in the county data from the form.
-						$county = $_POST['county']; 
-
-						echo 
-						'<form method="POST" action="process.php" id="form2">';
-						include 'scripts/insurances_select.php';
-						getInsuranceList('California', $county);
-						echo '<button type="Submit">Submit</button></form>';
+				<?php include '../scripts/database.php'; 
+					  //  Take in the county data from the form.
+					  $county = $_POST['county'];  
+					  echo 
+					  '<form method="POST" action="scripts/process.php" id="form2">';
+					  include 'scripts/insurances_select.php';
+					  getInsuranceList('California', $county);
+					  echo '<button type="Submit">Submit</button></form>';
 				?>
 			</section>
 		</main>
