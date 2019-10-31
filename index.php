@@ -50,11 +50,6 @@
             </div>
         </div>
         <main>
-            <section class="front">
-                <h2>We are here to help!</h2>
-                <p>Hello Wolrd</p>
-            </section>
-
             <div id="t-flag">
                 <div class="donation-container">
                     <h2>Help asdadasdasd</h2>
@@ -64,6 +59,20 @@
                     <span class="donation-carrier">@cashapp</span>
                 </div>
             </div>
+
+            <section id="info-front">
+                <h2>We are here to help. Every step of the way.</h2>
+
+                <div id="p-info">
+                    <h3>Questioning your gender identity?</h3>
+                    <span>We have some information and resources that may be of help to you.</span>
+                </div>
+
+                <div id="b-info">
+                    <h3>We are your number one source of information.</h3>
+                    <span>We have compiled lists of psychologists, endocrinologists, lawyers, and so on that are able to help you wherever you are.</span>
+                </div>
+            </section>
 
             <div id="tabs-container">
                 <div id="tab-container">

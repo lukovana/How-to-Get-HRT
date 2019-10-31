@@ -1,11 +1,12 @@
 
 		#t-flag {
             background: url('../assets/images/bg.svg');
-            width: 50em;
-            height: 30em;
+            width: 90%;
+            height: 40em;
             display: flex;
             align-items: center;
             justify-content: center;
+            margin: 2em 2em 5em 2em;
         }
 
         .donation-container {
@@ -52,7 +53,9 @@
             grid-area: app;
         }
         #tabs-container {
-            width: 40em;
+            width: 70%;
+            margin-left: auto;
+            margin-right: auto;
         }
         #tab-container {
             height: 8em;
