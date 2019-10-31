@@ -31,7 +31,7 @@
         <main>
             <section class="front">
                 <h2>We are here to help!</h2>
-                <p>Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way.Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way.Every single step of the way. Every single step of the way.Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way. v</p>
+                <p>Hello Wolrd</p>
             </section>
         </main>
         <?php include 'templates/footer.php';?>
