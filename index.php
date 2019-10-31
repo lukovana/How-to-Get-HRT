@@ -17,6 +17,25 @@
         <link rel="stylesheet" href="stylesheets/main.css">
         
         <script src="scripts/website.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $("#contact").css("visibility", "hidden");
+                $("#learn").css("visibility", "hidden");
+
+                $("#p-tab").click(function(){
+                    $("#learn").css("display", "none");
+                    $("#contact").css("visibility", "visible");
+                    $("#contact").toggle();
+                })
+
+                $("#b-tab").click(function(){
+                    $("#contact").css("display", "none");
+                    $("#learn").css("visibility", "visible");
+                    $("#learn").toggle();
+                })
+            })
+        </script>
 
     </head>
     <body>
@@ -30,8 +49,7 @@
         <main>
             <section class="front">
                 <h2>We are here to help!</h2>
-                <p>Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way.Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way.Every single step of the way. Every single step of the way.Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way. Every single step of the way. v</p>
-            </section>
+                <p>Hello World</p>
         </main>
         <?php include 'templates/footer.php';?>
     </body>
