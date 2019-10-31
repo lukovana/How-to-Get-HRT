@@ -15,8 +15,29 @@
         <link rel="icon" href="http://example.com/favicon.ico">
         <link rel="stylesheet" href="stylesheets/website.css"> 
         <link rel="stylesheet" href="stylesheets/main.css">
+        <link rel="stylesheet" href="stylesheets/trans.css">
         
         <script src="scripts/website.js"></script>
+        <script src="scripts/jquery-3.4.1.min.js"></script>
+        <script>
+            $(document).ready(function(){
+
+                $("#contact").css("visibility", "hidden");
+                $("#learn").css("visibility", "hidden");
+
+                $("#p-tab").click(function(){
+                    $("#learn").css("display", "none");
+                    $("#contact").css("visibility", "visible");
+                    $("#contact").toggle();
+                })
+
+                $("#b-tab").click(function(){
+                    $("#contact").css("display", "none");
+                    $("#learn").css("visibility", "visible");
+                    $("#learn").toggle();
+                })
+            })
+        </script>
 
     </head>
     <body>
@@ -33,6 +54,61 @@
                 <h2>We are here to help!</h2>
                 <p>Hello Wolrd</p>
             </section>
+
+            <div id="t-flag">
+                <div class="donation-container">
+                    <h2>Help asdadasdasd</h2>
+                    <div class="donation-img"></div>
+                    <span class="donation-money">$2,000 goal</span>
+                    <div class="donation-bar"></div>
+                    <span class="donation-carrier">@cashapp</span>
+                </div>
+            </div>
+
+            <div id="tabs-container">
+                <div id="tab-container">
+                    <div id="tab-pink" class="tab"><a href="#" id="p-tab">Talk to us today!</a></div>
+                    <div id="tab-blue" class="tab"><a href="#" id="b-tab">Learn More!</a></div>
+                </div>
+                <div id="contact">
+                    <div class="gr">
+                        <span>If you'd like to shoot us an email, you're free to use the form down here. if not, there are alternate ways to contact us.</span>
+                        <ul>
+                            <li>Text: (000) 000 - 0000</li>
+                            <li>Email: 000@whatever.com</li>
+                            <li>Facebook: Blegh What</li>
+                        </ul>
+                    </div>
+                    <hr size=1>
+                    <form>
+                        <div class="lr">
+                            <div>
+                                <label>Name</label>
+                                <input type="text" name="name"/>
+                            </div>
+
+                            <div>
+                                <label>Pronouns</label>
+                                <input type="text" name="pronouns"/>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label>Message</label>
+                            <textarea></textarea>
+                        </div>
+
+                        <button type="reset">Reset</button>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <div id="learn">
+                    <span>
+                        Learn more about us lorem ipsem dolor sum amet.
+                    </span>
+                </div>
+            </div>
+
         </main>
         <?php include 'templates/footer.php';?>
     </body>
