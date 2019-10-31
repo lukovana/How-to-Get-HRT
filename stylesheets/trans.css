@@ -203,3 +203,29 @@
             background-color: #454545;
             color: #fff;
         }
+
+        #info-front {
+            color: #fff;
+            margin: 0 10em;
+        }
+
+        #info-front h2 {
+            font-family: "Montserrat SemiBold";
+            color: #454545;
+        }
+
+        #info-front div {
+            width: 50%;
+            padding: 2em;
+            font-size: 1.1em;
+            border-radius: 30px;
+        }
+
+        #p-info {
+            background-color:  #fb9ee4;
+            margin: 1em auto 2em 2em;
+        }
+        #b-info {
+            background-color: #84e2fc;
+            margin: 1em 2em 2em auto;
+        }

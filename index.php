@@ -61,7 +61,8 @@
             </div>
 
             <section id="info-front">
-                <h2>We are here to help. Every step of the way.</h2>
+                <h2>We are here to help.</h2>
+                <h2>Every step of the way.</h2>
 
                 <div id="p-info">
                     <h3>Questioning your gender identity?</h3>
